@@ -2,7 +2,10 @@ doctype html
 html
   include components/head
   body
-    include components/header
+    header.section.page-header
+      .container
+        include components/header_top
+        include components/menu
     include components/HomeBanner
     include components/weather
     include components/masonry
