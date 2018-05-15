@@ -2,8 +2,11 @@ doctype html
 html
   include components/head
   body
-    include components/header
-    include components/HomeBanner.pug
+    header.section.page-header
+      .container
+        include components/header_top
+        include components/menu
+    include components/HomeBanner
     include components/masonry
     include components/welcome_bar
     include components/news

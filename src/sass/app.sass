@@ -7,7 +7,7 @@ body
     font-size: 13px
 
 .container
-    padding: 15px
+    // padding: 15px
     width: 1400px
     // text-align: center
 iframe
@@ -5524,9 +5524,7 @@ html
 h3 + .row, .heading-3 + .row, h3 + .owl-carousel, .heading-3 + .owl-carousel
   margin-top: 35px
 
-.container +
-  .container
-    margin-top: 35px
+
   .section
     margin-top: 25px
 
@@ -5589,8 +5587,8 @@ h3 + .row, .heading-3 + .row, h3 + .owl-carousel, .heading-3 + .owl-carousel
     margin-top: 30px
   html * + .offset-top-1
     margin-top: 70px
-  .container + .container, .row + .row
-    margin-top: 60px
+  // .container + .container, .row + .row
+  //   margin-top: 60px
 
 @media (min-width: 1600px)
   h3 + .row, .heading-3 + .row, h3 + .owl-carousel, .heading-3 + .owl-carousel
@@ -7448,6 +7446,7 @@ html
   display: block
   .rd-nav-item
     display: inline-block
+    margin-right: 15px
     &.focus .rd-nav-link, &.opened .rd-nav-link
       color: #4854ed
       background: transparent
@@ -7830,6 +7829,7 @@ html
   .rd-nav-link
     display: block
     padding: 14px 56px 14px 18px
+
   li.opened >
     .rd-navbar-dropdown
       padding: 4px 0 0
@@ -8450,7 +8450,7 @@ html.rd-navbar-fixed-linked .page
       -ms-flex-align: center
       align-items: center
       -ms-flex-pack: justify
-      justify-content: space-between
+      justify-content: center
       max-width: 1170px
       padding: 20px 0
       margin-left: auto
@@ -8463,7 +8463,7 @@ html.rd-navbar-fixed-linked .page
       align-items: center
       -ms-flex-pack: justify
       justify-content: space-between
-      min-width: 690px
+      // min-width: 690px
     .rd-navbar-brand img
       width: auto
       height: auto
@@ -8494,7 +8494,7 @@ html.rd-navbar-fixed-linked .page
 @media (min-width: 1200px)
   .rd-navbar-minimal.rd-navbar-static
     .rd-navbar-main
-      padding: 30px 0
+      // padding: 30px 0
     .rd-menu
       margin-top: 34px
 
@@ -13714,3 +13714,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom
 @media (min-width: 1600px)
   .d3-chart-legend span
     font-size: 18px
+
+
+@import "components/header_top"
+@import "components/menu"
