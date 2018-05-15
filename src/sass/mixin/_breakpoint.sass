@@ -1,0 +1,51 @@
+@mixin media-breakpoint-up($name)
+  @if $name == xs
+    @media (min-width: $screen-xs)
+      @content
+  @else if $name == sm
+    @media (min-width: $screen-sm-min)
+      @content
+  @else if $name == md
+    @media (min-width: $screen-md-min)
+      @content
+  @else if $name == lg
+    @media (min-width: $screen-lg-min)
+      @content
+
+@mixin media-breakpoint-down($name)
+  @if $name == xs
+    @media (max-width: $screen-xs-max)
+     @content
+  @else if $name == sm
+    @media (max-width: $screen-sm-max)
+      @content
+  @else if $name == md
+    @media (max-width: $screen-ms-max)
+      @content
+  @else if $name == lg
+      @content
+
+@mixin media-breakpoint-only($name)
+  @if $name == xs
+    @media (max-width: $screen-xs-max)
+      @content
+  @else if $name == sm
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
+      @content
+  @else if $name == md
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max)
+      @content
+  @else if $name == lg
+    @media (min-width: $screen-lg-min)
+      @content
+
+
+// 1200 - up  lg  電腦
+// 1199 - 992 md  平板
+// 991  - 768 sm  小平板
+// 767  - 480 xs   手機
+//
+//$screen-lg-min - up
+//$screen-md-max - $screen-md-min
+//$screen-sm-max - $screen-sm-min
+//$screen-xs-max - $screen-xs
