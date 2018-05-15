@@ -29,7 +29,7 @@
   }
 
   const minifySASS = function() {
-    return gulp.src(config.src.sass).pipe(sass({outputStyle: 'compressed'})).pipe(gulp.dest(config.dest.sass)).pipe(browserSync.stream())
+    return gulp.src(config.src.sass).pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)).pipe(gulp.dest(config.dest.sass)).pipe(browserSync.stream())
   }
 
   const minifyHTML = function() {
