@@ -19,18 +19,27 @@ footer
             font-size: 16px
             align-items: flex-end
             text-align: left
+            flex-wrap: wrap
             .img_wrapper
-               flex-basis: 30%
-               max-width: 30%
-               margin: 0
-               .imgs
-                   margin-bottom: 10px
+                flex-basis: 100%
+                max-width: 100%
+                margin: 0
+                margin-bottom: 10px
+
+                @media (min-width:1200px)
+                    flex-basis: 30%
+                    max-width: 30%
+                    margin: 0
+                .imgs
+                    margin-bottom: 10px
             .copyright
-                flex-basis: 55%
-                max-width: 55%
+                @media (min-width:1200px)
+                    flex-basis: 55%
+                    max-width: 55%
                 margin: 0
             .other_words
-                flex-basis: 15%
-                max-width: 15%
+                @media (min-width:1200px)
+                    flex-basis: 15%
+                    max-width: 15%
                 margin: 0
             
