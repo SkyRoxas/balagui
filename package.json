@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "express": "^4.16.2",
+    "openweather-apis": "^3.3.5",
     "path": "^0.12.7"
   }
 }
