@@ -1,7 +1,6 @@
 const openWeather = require('openweather-apis')
 
 const weatherInfo = (city, offset, imgSrc) => {
-  const info = {}
   const date = new Date()
   const localDate = date.getTime()
   const UTC = localDate + ( date.getTimezoneOffset() * 60000)
@@ -15,28 +14,32 @@ const weatherInfo = (city, offset, imgSrc) => {
 
   openWeather.setAPPID('c8d534899e3021e14893ca5efed156dc')
 
-  openWeather.getAllWeather(function(err, JSONObj){
+  return new Promise((resolve, reject) => {
+      openWeather.getAllWeather(function (err, JSONObj) {
+      let { main, weather } = JSONObj
+      weather = weather[0]
 
-    let { main, weather } = JSONObj
+      const timeStr = `<div style="padding-right:5px;"><h3 style="font-weight:400; line-height:30px;">${currectHours} : ${currectMinutes}</h3></div>`
+      const contry = `<div style="padding-right:5px;"><img src ="${imgSrc}" width="50"/></div>`
+      const iconDOM = `<div style="padding-right:5px; height:35px; overflow:hidden;"><img src ="http://openweathermap.org/img/w/${weather.icon}.png"></div>`
+      const tempStr = `<div>${main.temp_min}/${main.temp_max}℃</div>`
 
-    weather = weather[0]
-
-    const timeStr = `<div style="padding-right:5px;"><h3 style="font-weight:400; line-height:30px;">${currectHours} : ${currectMinutes}</h3></div>`
-    const contry = `<div style="padding-right:5px;"><img src ="${imgSrc}" width="50"/></div>`
-    const iconDOM = `<div style="padding-right:5px; height:35px; overflow:hidden;"><img src ="http://openweathermap.org/img/w/${weather.icon}.png"></div>`
-    const tempStr = `<div>${main.temp_min}/${main.temp_max}℃</div>`
-
-    const item = document.createElement('li')
-    item.classList.add('d-flex', 'align-items-end', 'px-5')
-
-
-    item.innerHTML = `${contry} ${timeStr} ${iconDOM} ${tempStr} `
-    document.getElementById('weatherInfo').appendChild(item)
-    console.log(JSONObj)
-  })
-
-  return info
+      const item = document.createElement('li')
+      item.classList.add('d-flex', 'align-items-end', 'px-5')
+      item.innerHTML = `${contry} ${timeStr} ${iconDOM} ${tempStr}`;    
+      
+      const info = {
+        html: item,
+        city: city
+      }
+      resolve(info);
+    });
+  });
 }
 
-weatherInfo('Asuncion', -4, './images/tw.png')
-weatherInfo('Taipei', 8, './images/pa.png')
+(async () =>{
+  let a = await weatherInfo('Asuncion', -4, './images/pa.png');
+  document.getElementById('weatherInfo').appendChild(a.html)
+  let b = await weatherInfo('Taipei', 8, './images/tw.png');
+  document.getElementById('weatherInfo').appendChild(b.html)
+})();
