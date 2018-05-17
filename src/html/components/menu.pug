@@ -1,170 +1,169 @@
-.container
-  .rd-navbar-wrap
-   nav.rd-navbar.rd-navbar-minimal(data-layout='rd-navbar-fixed', data-sm-layout='rd-navbar-fixed', data-md-layout='rd-navbar-fixed', data-md-device-layout='rd-navbar-fixed', data-lg-layout='rd-navbar-static', data-lg-device-layout='rd-navbar-fixed', data-xl-layout='rd-navbar-static', data-xl-device-layout='rd-navbar-fixed', data-lg-stick-up-offset='46px', data-xl-stick-up-offset='46px', data-xxl-stick-up-offset='46px', data-lg-stick-up='true', data-xl-stick-up='true', data-xxl-stick-up='true')
-      .rd-navbar-main-outer
-        .rd-navbar-main
-          // RD Navbar Panel
-          .rd-navbar-panel
-            // RD Navbar Toggle
-            button.rd-navbar-toggle(data-rd-navbar-toggle='#rd-navbar-nav-wrap-1')
+.rd-navbar-wrap
+ nav.rd-navbar.rd-navbar-minimal(data-layout='rd-navbar-fixed', data-sm-layout='rd-navbar-fixed', data-md-layout='rd-navbar-fixed', data-md-device-layout='rd-navbar-fixed', data-lg-layout='rd-navbar-static', data-lg-device-layout='rd-navbar-fixed', data-xl-layout='rd-navbar-static', data-xl-device-layout='rd-navbar-fixed', data-lg-stick-up-offset='46px', data-xl-stick-up-offset='46px', data-xxl-stick-up-offset='46px', data-lg-stick-up='true', data-xl-stick-up='true', data-xxl-stick-up='true')
+    div
+      .rd-navbar-main.d-block
+        // RD Navbar Panel
+        .rd-navbar-panel
+          // RD Navbar Toggle
+          button.rd-navbar-toggle(data-rd-navbar-toggle='#rd-navbar-nav-wrap-1')
+            span
+          // RD Navbar Brand
+          //a.rd-navbar-brand(href='index.html')
+            //img(src='images/logo-default-141x21.png', alt='', width='141', height='21', srcset='images/logo-default-281x45.png 2x')
+        .rd-navbar-main-element.d-block
+          #rd-navbar-nav-wrap-1.rd-navbar-nav-wrap
+            // RD Navbar Nav
+            ul.rd-navbar-nav.d-md-flex.justify-content-between.align-items-end
+              li.rd-nav-item
+                a.rd-nav-link(href='#')
+                  | EMBAJADA
+                  br
+                  | DEL PARAGUAY
+                // RD Navbar Megamenu
+                ul.rd-menu.rd-navbar-megamenu
+                  li.rd-megamenu-item
+                    .banner(style='background-image: url(images/banner.jpg);')
+                      a.button.button-sm.button-primary.button-winona(href='#get-template')
+                        | Embassy of
+                        br
+                        | Paraguay
+                  li.rd-megamenu-item
+                    ul.rd-megamenu-list
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') ADDRESS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') OPEN TO THE PUBLIC
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') PERSONNEL
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') HEAD OF MISSION
+              li.rd-nav-item
+                a.rd-nav-link(href='#')
+                  | INFORMACION
+                  br
+                  | GENERAL 
+                // RD Navbar Megamenu
+                ul.rd-menu.rd-navbar-megamenu
+                  li.rd-megamenu-item
+                    .banner(style='background-image: url(images/banner2.jpg);')
+                      a.button.button-sm.button-primary.button-winona(href='major_2.html') 	General
+                  li.rd-megamenu-item
+                    ul.rd-megamenu-list
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#')
+                          | GEOGRAPHICAL
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') 	HISTORICAL
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#')
+                          | POLITICAL ORGANIZATION
+                  li.rd-megamenu-item
+                    ul.rd-megamenu-list
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') 	CULTURE
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') ECONOMY
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') LINKS
+              li.rd-nav-item
+                a.rd-nav-link(href='#')
+                  | INVERSIONES
+                  br
+                  | COMERCIALES
+                // RD Navbar Megamenu
+                ul.rd-menu.rd-navbar-megamenu
+                  li.rd-megamenu-item
+                    .banner(style='background-image: url(images/banner4.jpg);')
+                      a.button.button-sm.button-primary.button-winona(href='major_3.html') Investments·Commerce
+                  li.rd-megamenu-item
+                    ul.rd-megamenu-list
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') ECONOMIC INDICATORS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#')
+                          | INVESTMENTS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') COMMERCE
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') INVESTMENT OPPORTUNITIES IN THE REPUBLIC OF PARAGUAY
+              li.rd-nav-item
+                a.rd-nav-link(href='#') TURISMO
+                // RD Navbar Megamenu
+              li.rd-nav-item
+                a.rd-nav-link(href='#')
+                  | ASUNTOS
+                  br
+                  | CONSULARES
+                // RD Navbar Megamenu
+                ul.rd-menu.rd-navbar-megamenu
+                  li.rd-megamenu-item
+                    .banner(style='background-image: url(images/banner3.jpg);')
+                      a.button.button-sm.button-primary.button-winona(href='#get-template') Consular Affairs
+                  li.rd-megamenu-item
+                    ul.rd-megamenu-list
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') PASSPORTS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#')
+                          | VISAS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') TRAVEL DOCUMENTS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') REPATRIATION
+                  li.rd-megamenu-item
+                    ul.rd-megamenu-list
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') LEGALIZATION
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') TARIFFS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') IMMIGRATION
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#')
+                          | Registration in the Books of Birth
+              
+              li.rd-nav-item
+                a.rd-nav-link(href='#')
+                  | RELACIONES
+                  br
+                  | DIPLOMATICAS
+                // RD Navbar Megamenu
+                ul.rd-menu.rd-navbar-megamenu
+                  li.rd-megamenu-item
+                    .banner(style='background-image: url(images/banner3.jpg);')
+                      a.button.button-sm.button-primary.button-winona(href='#get-template') Consular Affairs
+                  li.rd-megamenu-item
+                    ul.rd-megamenu-list
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') PASSPORTS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#')
+                          | VISAS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') TRAVEL DOCUMENTS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') REPATRIATION
+                  li.rd-megamenu-item
+                    ul.rd-megamenu-list
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') LEGALIZATION
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') TARIFFS
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#') IMMIGRATION
+                      li.rd-megamenu-list-item
+                        a.rd-megamenu-list-link(href='#')
+                          | Registration in the Books of Birth
+              
+              li.rd-nav-item
+                a.rd-nav-link(href='contacts.html') NOTICIAS
+          // RD Navbar Search
+          #rd-navbar-search-1.rd-navbar-search.d-none
+            button.rd-navbar-search-toggle.rd-navbar-fixed-element-2(data-rd-navbar-toggle='#rd-navbar-search-1')
               span
-            // RD Navbar Brand
-            //a.rd-navbar-brand(href='index.html')
-              //img(src='images/logo-default-141x21.png', alt='', width='141', height='21', srcset='images/logo-default-281x45.png 2x')
-          .rd-navbar-main-element
-            #rd-navbar-nav-wrap-1.rd-navbar-nav-wrap
-              // RD Navbar Nav
-              ul.rd-navbar-nav
-                li.rd-nav-item
-                  a.rd-nav-link(href='#')
-                    | EMBAJADA
-                    br
-                    | DEL PARAGUAY
-                  // RD Navbar Megamenu
-                  ul.rd-menu.rd-navbar-megamenu
-                    li.rd-megamenu-item
-                      .banner(style='background-image: url(images/banner.jpg);')
-                        a.button.button-sm.button-primary.button-winona(href='#get-template')
-                          | Embassy of
-                          br
-                          | Paraguay
-                    li.rd-megamenu-item
-                      ul.rd-megamenu-list
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') ADDRESS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') OPEN TO THE PUBLIC
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') PERSONNEL
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') HEAD OF MISSION
-                li.rd-nav-item
-                  a.rd-nav-link(href='#')
-                    | INFORMACION
-                    br
-                    | GENERAL 
-                  // RD Navbar Megamenu
-                  ul.rd-menu.rd-navbar-megamenu
-                    li.rd-megamenu-item
-                      .banner(style='background-image: url(images/banner2.jpg);')
-                        a.button.button-sm.button-primary.button-winona(href='major_2.html') 	General
-                    li.rd-megamenu-item
-                      ul.rd-megamenu-list
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#')
-                            | GEOGRAPHICAL
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') 	HISTORICAL
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#')
-                            | POLITICAL ORGANIZATION
-                    li.rd-megamenu-item
-                      ul.rd-megamenu-list
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') 	CULTURE
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') ECONOMY
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') LINKS
-                li.rd-nav-item
-                  a.rd-nav-link(href='#')
-                    | INVERSIONES
-                    br
-                    | COMERCIALES
-                  // RD Navbar Megamenu
-                  ul.rd-menu.rd-navbar-megamenu
-                    li.rd-megamenu-item
-                      .banner(style='background-image: url(images/banner4.jpg);')
-                        a.button.button-sm.button-primary.button-winona(href='major_3.html') Investments·Commerce
-                    li.rd-megamenu-item
-                      ul.rd-megamenu-list
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') ECONOMIC INDICATORS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#')
-                            | INVESTMENTS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') COMMERCE
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') INVESTMENT OPPORTUNITIES IN THE REPUBLIC OF PARAGUAY
-                li.rd-nav-item
-                  a.rd-nav-link(href='#') TURISMO
-                  // RD Navbar Megamenu
-                li.rd-nav-item
-                  a.rd-nav-link(href='#')
-                    | ASUNTOS
-                    br
-                    | CONSULARES
-                  // RD Navbar Megamenu
-                  ul.rd-menu.rd-navbar-megamenu
-                    li.rd-megamenu-item
-                      .banner(style='background-image: url(images/banner3.jpg);')
-                        a.button.button-sm.button-primary.button-winona(href='#get-template') Consular Affairs
-                    li.rd-megamenu-item
-                      ul.rd-megamenu-list
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') PASSPORTS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#')
-                            | VISAS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') TRAVEL DOCUMENTS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') REPATRIATION
-                    li.rd-megamenu-item
-                      ul.rd-megamenu-list
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') LEGALIZATION
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') TARIFFS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') IMMIGRATION
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#')
-                            | Registration in the Books of Birth
-                
-                li.rd-nav-item
-                  a.rd-nav-link(href='#')
-                    | RELACIONES
-                    br
-                    | DIPLOMATICAS
-                  // RD Navbar Megamenu
-                  ul.rd-menu.rd-navbar-megamenu
-                    li.rd-megamenu-item
-                      .banner(style='background-image: url(images/banner3.jpg);')
-                        a.button.button-sm.button-primary.button-winona(href='#get-template') Consular Affairs
-                    li.rd-megamenu-item
-                      ul.rd-megamenu-list
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') PASSPORTS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#')
-                            | VISAS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') TRAVEL DOCUMENTS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') REPATRIATION
-                    li.rd-megamenu-item
-                      ul.rd-megamenu-list
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') LEGALIZATION
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') TARIFFS
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#') IMMIGRATION
-                        li.rd-megamenu-list-item
-                          a.rd-megamenu-list-link(href='#')
-                            | Registration in the Books of Birth
-                
-                li.rd-nav-item
-                  a.rd-nav-link(href='contacts.html') NOTICIAS
-            // RD Navbar Search
-            #rd-navbar-search-1.rd-navbar-search
-              button.rd-navbar-search-toggle.rd-navbar-fixed-element-2(data-rd-navbar-toggle='#rd-navbar-search-1')
-                span
-              form.rd-search(action='search-results.html', data-search-live='rd-search-results-live-1', method='GET')
-                .form-wrap
-                  label.form-label(for='rd-navbar-search-form-input-1') search...
-                  input#rd-navbar-search-form-input-1.form-input.rd-navbar-search-form-input(type='text', name='s', autocomplete='off')
-                  #rd-search-results-live-1.rd-search-results-live
-                button.rd-search-form-submit.fa-search(type='submit')
+            form.rd-search(action='search-results.html', data-search-live='rd-search-results-live-1', method='GET')
+              .form-wrap
+                label.form-label(for='rd-navbar-search-form-input-1') search...
+                input#rd-navbar-search-form-input-1.form-input.rd-navbar-search-form-input(type='text', name='s', autocomplete='off')
+                #rd-search-results-live-1.rd-search-results-live
+              button.rd-search-form-submit.fa-search(type='submit')
