@@ -48,5 +48,8 @@ const weatherInfo = (city, offset, imgSrc) => {
 // preload
 
 window.addEventListener('load', ()=>{
+  if( !document.getElementById('preloader') ){
+    return
+  }
   document.getElementById('preloader').classList.add('loaded')
 })
