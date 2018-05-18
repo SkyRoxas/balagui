@@ -19,27 +19,34 @@ const weatherInfo = (city, offset, imgSrc) => {
       let { main, weather } = JSONObj
       weather = weather[0]
 
-      const timeStr = `<div style="padding-right:5px;"><h3 style="font-weight:400; line-height:30px;">${currectHours} : ${currectMinutes}</h3></div>`
-      const contry = `<div style="padding-right:5px;"><img src ="${imgSrc}" width="50"/></div>`
-      const iconDOM = `<div style="padding-right:5px; height:35px; overflow:hidden;"><img src ="http://openweathermap.org/img/w/${weather.icon}.png"></div>`
+      const timeStr = `<div style="padding-right:15px;"><h3 style="font-weight:400; line-height:30px; white-space:nowrap;">${currectHours} : ${currectMinutes}</h3></div>`
+      const contry = `<div style="padding-right:15px;"><img src ="${imgSrc}" width="50"/></div>`
+      const iconDOM = `<div style="padding-right:15px;"><img width="50" src ="./images/weather_${weather.icon}.png"></div>`
       const tempStr = `<div>${main.temp_min}/${main.temp_max}℃</div>`
 
       const item = document.createElement('li')
-      item.classList.add('d-flex', 'align-items-end', 'px-5')
-      item.innerHTML = `${contry} ${timeStr} ${iconDOM} ${tempStr}`;    
-      
+      item.classList.add('d-flex', 'align-items-end', 'px-5', 'mb-3')
+      item.innerHTML = `${contry} ${timeStr} ${iconDOM} ${tempStr}`
+
       const info = {
         html: item,
         city: city
       }
-      resolve(info);
+      resolve(info)
     });
   });
 }
 
 (async () =>{
-  let a = await weatherInfo('Asuncion', -4, './images/pa.png');
+  let a = await weatherInfo('Asuncion', -4, './images/pa.png')
   document.getElementById('weatherInfo').appendChild(a.html)
-  let b = await weatherInfo('Taipei', 8, './images/tw.png');
+  let b = await weatherInfo('Taipei', 8, './images/tw.png')
   document.getElementById('weatherInfo').appendChild(b.html)
 })();
+
+
+// preload
+
+window.addEventListener('load', ()=>{
+  document.getElementById('preloader').classList.add('loaded')
+})
