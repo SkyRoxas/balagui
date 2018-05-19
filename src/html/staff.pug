@@ -1,0 +1,31 @@
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        .banner(style="min-height: 480px;background-image: url('/images/staff_banner.jpg'); background-repeat: no-repeat;background-position: center center;background-size:cover;")
+      .content.container.my-5
+        h1 FUNCIONARIOS DIPLOMATICOS Y ADMINISTRATIVOS
+        h2 Miembros del Personal Diplomático y Administrativo 
+        p S.E. Marcial Bobadilla Guillén  .................... Embajador
+        p Sr. Carlos Vidal Pintos ................................ Consejero
+        p Sr. Estanislao Lezcano ............................... Primer Secretario y Encargado de los Asuntos Consulares
+        p Cnel. DEM. Atanasio Bogado González ....... Agregado de Defensa
+        p Srta. Zaide Macarena Barboza López........... Agregada Comercial
+        p 
+        h2 Secretarias 
+        p Srta. Hsu, Ching-Huei
+        p Srta. Jenq, Sheau-Pyng
+        p Srta. Lin, Yi-Yin
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
