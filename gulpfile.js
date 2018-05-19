@@ -33,7 +33,7 @@
   }
 
   const minifyHTML = function() {
-    return gulp.src(config.src.html).pipe(pug()).pipe(gulp.dest(config.dest.html)).pipe(browserSync.stream())
+    return gulp.src(config.src.html).pipe(pug().on('error', function(err){console.log(err)})).pipe(gulp.dest(config.dest.html)).pipe(browserSync.stream())
   }
 
   const imageMin = function() {
