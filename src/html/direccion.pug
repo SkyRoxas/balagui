@@ -1,3 +1,5 @@
+include mixin/cover-banner
+
 doctype html
 html
   include components/head
@@ -8,7 +10,7 @@ html
           include components/header_top
           include components/menu
       #banner
-        .banner(style="min-height: 480px;background-image: url('/images/direccion_banner.jpg'); background-repeat: no-repeat;background-position: center center;background-size:cover;")
+        +cover-banner('/images/direccion_banner.jpg', '480px')
       .content.container.my-5
         h1 DIRECCION
         p Dirección: 7th. Floor No. 9-1 Lane 62 Tien Mu West Rd. Taipei, Taiwan 
