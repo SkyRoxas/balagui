@@ -38,10 +38,13 @@ const weatherInfo = (city, offset, imgSrc) => {
 }
 
 (async () =>{
-  let a = await weatherInfo('Asuncion', -4, './images/pa.png')
-  document.getElementById('weatherInfo').appendChild(a.html)
-  let b = await weatherInfo('Taipei', 8, './images/tw.png')
-  document.getElementById('weatherInfo').appendChild(b.html)
+  if (!document.getElementById('weatherInfo')) {
+    return
+  }
+  let Asuncion = await weatherInfo('Asuncion', -4, './images/pa.png')
+  document.getElementById('weatherInfo').appendChild(Asuncion.html)
+  let Taipei = await weatherInfo('Taipei', 8, './images/tw.png')
+  document.getElementById('weatherInfo').appendChild(Taipei.html)
 })();
 
 

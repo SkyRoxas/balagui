@@ -1,0 +1,63 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('/images/direccion_banner.jpg', '480px')
+      #page
+        .container
+          main
+            h1(class="page-title") ENLACES
+            .other_links_content
+              .wrapper
+                .link
+                  .link_wrapper.row
+                    .left.col-md-3
+                      img(src="./images/pic02.jpg", alt="")
+                    .right.col-md-9 
+                      .link_content GOBIERNO </br> PRESIDENCIA DE LA REPÚBLICA </br> PODER LEGISLATIVO </br> PODER JUDICIAL </br> MINISTERIO DE RELACIONES EXTERIORES </br> MINISTERO DE INTERIOR </br> MINISTERIO DE HACIENDA </br> MINISTERIO DE EDUCACIÓN Y CULTURA </br> MINISTERIO DE AGRICULTURA Y GANADERIA </br> MINISTERIO DE OBRAS PUB. Y COMUNICACIONES
+                .link
+                  .link_wrapper.row
+                    .left.col-md-3
+                      img(src="./images/pic02.jpg", alt="")
+                    .right.col-md-9 
+                      .link_content PRODUCCION, COMERCIO E INVERSIONES </br> PRESIDENCIA DE LA REPÚBLICA </br> PODER LEGISLATIVO </br> PODER JUDICIAL </br> MINISTERIO DE RELACIONES EXTERIORES </br> MINISTERO DE INTERIOR </br> MINISTERIO DE HACIENDA </br> MINISTERIO DE EDUCACIÓN Y CULTURA </br> MINISTERIO DE AGRICULTURA Y GANADERIA </br> MINISTERIO DE OBRAS PUB. Y COMUNICACIONES
+                .link
+                  .link_wrapper.row
+                    .left.col-md-3
+                      img(src="./images/pic02.jpg", alt="")
+                    .right.col-md-9
+                      .link_content ORGANISMOS DE INTEGRACION REGIONAL </br> PRESIDENCIA DE LA REPÚBLICA </br> PODER LEGISLATIVO </br> PODER JUDICIAL </br> MINISTERIO DE RELACIONES EXTERIORES </br> MINISTERO DE INTERIOR </br> MINISTERIO DE HACIENDA </br> MINISTERIO DE EDUCACIÓN Y CULTURA </br> MINISTERIO DE AGRICULTURA Y GANADERIA </br> MINISTERIO DE OBRAS PUB. Y COMUNICACIONES
+                .link
+                  .link_wrapper.row
+                    .left.col-md-3
+                      img(src="./images/pic02.jpg", alt="")
+                    .right.col-md-9
+                      .link_content CULTURA </br> PRESIDENCIA DE LA REPÚBLICA </br> PODER LEGISLATIVO </br> PODER JUDICIAL </br> MINISTERIO DE RELACIONES EXTERIORES </br> MINISTERO DE INTERIOR </br> MINISTERIO DE HACIENDA </br> MINISTERIO DE EDUCACIÓN Y CULTURA </br> MINISTERIO DE AGRICULTURA Y GANADERIA </br> MINISTERIO DE OBRAS PUB. Y COMUNICACIONES
+                .link
+                  .link_wrapper.row
+                    .left.col-md-3
+                      img(src="./images/pic02.jpg", alt="")
+                    .right.col-md-9
+                      .link_content MEDIOS DE COMUNICACIÓN </br> PRESIDENCIA DE LA REPÚBLICA </br> PODER LEGISLATIVO </br> PODER JUDICIAL </br> MINISTERIO DE RELACIONES EXTERIORES </br> MINISTERO DE INTERIOR </br> MINISTERIO DE HACIENDA </br> MINISTERIO DE EDUCACIÓN Y CULTURA </br> MINISTERIO DE AGRICULTURA Y GANADERIA </br> MINISTERIO DE OBRAS PUB. Y COMUNICACIONES
+                .link
+                  .link_wrapper.row
+                    .left.col-md-3
+                      img(src="./images/pic02.jpg", alt="")
+                    .right.col-md-9
+                      .link_content ENTIDADES DE LA REPUBLICA DE CHINA – TAIWAN </br> PRESIDENCIA DE LA REPÚBLICA </br> PODER LEGISLATIVO </br> PODER JUDICIAL </br> MINISTERIO DE RELACIONES EXTERIORES </br> MINISTERO DE INTERIOR </br> MINISTERIO DE HACIENDA </br> MINISTERIO DE EDUCACIÓN Y CULTURA </br> MINISTERIO DE AGRICULTURA Y GANADERIA </br> MINISTERIO DE OBRAS PUB. Y COMUNICACIONES
+              
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
