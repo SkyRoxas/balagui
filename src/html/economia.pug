@@ -1,0 +1,27 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('/images/economia_banner.png', '480px')
+      .content.container.my-5
+        h1 ECONOMIA
+        p El sector productivo más importante del Paraguay es la agricultura, no obstante el sustancial crecimiento de la industria y, en los últimos años, de la ganadería. Los principales productos son la soja, el algodón, caña de azúcar, maíz, trigo, tabaco, frutas, vegetales, carne vacuna y porcina, leche y madera. Si bien existen fábricas de vidrio, cemento, acero, plástico y plantas metalúrgicas, la agroindustria es muy importante, siendo representativos del área los ingenios azucareros,procesadoras de carnes, fábricas de bebidas, textiles, industrias de la madera, plantas de elaboración de jugos de frutas, preparación de alimentos varios, de  aceites vegetales y aceites esenciales, manufactura del cuero.
+        p Importantes factores para el desarrollo económico del país constituyen las hidroeléctricas binacionales de Itaipú y de Yacyretá, ubicadas en el río Paraná. La primera construida en sociedad con el Brasil tiene una potencia instalada de 14.000 MW con capacidad de producción de energía de 90.620 GWh anuales y la segunda con Argentina, con potencia instalada de 3.200 MW y con capacidad de producir 19.000 GWh anuales.
+        p En el año 2007, dichas hidroeléctricas, juntamente con  la paraguaya de Acaray, produjeron en conjunto, 70 mil millones de Kwh. El 99.9% de la producción total de energía eléctrica del Paraguay proviene de esos emprendimientos. Otro factor importante para el desarrollo constituye la red de 4.300 kilómetros de rutas asfaltadas, existente en el Paraguay.
+        p Vitales medios de integración física regional serán una vez que concluyan las obras de la interconexión vial transversal que unirá los océanos Atlántico y Pacífico, denominada corredor bioceánico y el Proyecto de la Hidrovía Paraguay-Paraná.
+        p Este último es un proyecto emprendido por Paraguay, Argentina, Bolivia, Brasil y Uruguay que tiene como objetivo mejorar la navegabilidad de 3.400 kilómetros de los ríos Paraguay y Paraná, desde el puerto de Cáceres en Brasil hasta Nueva Palmira, Uruguay, mediante la realización de obras de dragado, balizamiento, profundización y mantenimiento de condiciones adecuadas para buques de gran calado, que permitirá el abaratamiento del costo de transporte fluvial de pro-ductos de la región.
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
