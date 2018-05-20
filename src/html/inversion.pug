@@ -1,0 +1,55 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('/images/direccion_banner.jpg', '480px')
+      #page
+        .container
+          main
+            h1(class="page-title") INVERSIONES
+            .inversion_content
+                .wrapper
+                    .inversion.even
+                        .row
+                            .left.col-md-5
+                                img(src="./images/banner.jpg", alt="")
+                            .right.col-md-7
+                                .title MEJOR CLIMA DE INVERSIÓN EN LA REGIÓN (MERCOSUR)
+                                .content En su reporte de mayo de 2016, la Fundación Getulio Vargas ubicó a Paraguay en la vanguardia económica de Sudamérica con el mejor puntaje. De hecho, solo nuestro país y Perú tienen economías prósperas. El clima económico paraguayo recibió 105 puntos en el trimestre de febrero a abril de 2016, de acuerdo con el indicador de Clima Económico de América Latina (ICE), elaborado por el Instituto Brasilero de Economía, perteneciente a la Fundación Getulio Vargas, y el Instituto Alemán IFO (Instituto Leibniz para la Investigación Económica). El informe destacó que el clima económico no demuestra resultados muy alentadores para América Latina y solamente Paraguay y Perú (104 puntos) estuvieron por encima de la línea que separa a las economías favorables de las desfavorables, que es de 100 puntos (ICE mundial). El clima económico se define como el grado de riesgo asociado a las inversiones en los mercados de productos financieros.
+                    .inversion.odd
+                        .row
+                            .left.col-md-5
+                                img(src="./images/banner.jpg", alt="")
+                            .right.col-md-7
+                                .title MEJOR CLIMA DE INVERSIÓN EN LA REGIÓN (MERCOSUR)
+                                .content En su reporte de mayo de 2016, la Fundación Getulio Vargas ubicó a Paraguay en la vanguardia económica de Sudamérica con el mejor puntaje. De hecho, solo nuestro país y Perú tienen economías prósperas. El clima económico paraguayo recibió 105 puntos en el trimestre de febrero a abril de 2016, de acuerdo con el indicador de Clima Económico de América Latina (ICE), elaborado por el Instituto Brasilero de Economía, perteneciente a la Fundación Getulio Vargas, y el Instituto Alemán IFO (Instituto Leibniz para la Investigación Económica). El informe destacó que el clima económico no demuestra resultados muy alentadores para América Latina y solamente Paraguay y Perú (104 puntos) estuvieron por encima de la línea que separa a las economías favorables de las desfavorables, que es de 100 puntos (ICE mundial). El clima económico se define como el grado de riesgo asociado a las inversiones en los mercados de productos financieros.
+                    .inversion.even
+                        .row
+                            .left.col-md-5
+                                img(src="./images/banner.jpg", alt="")
+                            .right.col-md-7
+                                .title GRAN PRODUCTOR DE ALIMENTOS PARA EL MUNDO
+                                .content Paraguay produce hoy alimentos para aproximadamente 80 millones de personas, y puede triplicar esa condición con incorporación de tecnología y planificación territorial. </br> Una parte de las exportaciones agrícolas de Paraguay se destina al consumo final o a la industria alimenticia, mientras que otra parte se destina a la alimentación de animales de granja, que a su vez contribuyen a la alimentación de consumidores.
+                    .inversion.odd
+                        .row
+                            .left.col-md-5
+                                img(src="./images/banner.jpg", alt="")
+                            .right.col-md-7
+                                .title 66% DE LA POBLACIÓN ES MENOR A 35 AÑOS
+                                .content El 66% de la población nacional es menor a 35 años de edad, acorde a los datos de la Dirección General de Estadísticas, Encuestas y Censos, basados en el Censo 2012 (proyección para el 2016).
+
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
