@@ -1,0 +1,39 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('/images/indicadores_economicos.png', '480px')
+      .content.container.my-5
+        h1 Indicadores Económicos de la República del Paraguay
+          br
+          | Año 2018[1] 
+          .row
+            .col-sm-6
+              img(src="images/Indicadores.png")
+              span(style="font-size:16px;") [1] Indicadores Económicos 2018 del Banco Central del Paraguay
+            .col-sm-6
+              p(style="font-size:16px;line-height:30px;") Proyección PIB 2018 4,5%
+                br
+                | PIB 2017 (Provisorio) 4,3%
+                br
+                | Inflación 2017 4,5%
+                br
+                | RIN 6 de abril de 2018 (Provisorio) 8.809,8 M de U$s
+              p(style="font-size:16px;line-height:30px;") Moneda Nacional y Relación de cambio con el dólar americano US$1= Gs. 5.480 
+                br
+                | Población Activa[1]  4.568.545 personas Tasa de Desempleo[1] 7,6 % Salario mínimo mensual[1] Gs. 2.041.123. (US$ 368 aprox.)
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
