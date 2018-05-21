@@ -1,0 +1,88 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/embassy_mision_banner.png', '343px')
+      .content.container.my-5
+        h1 JEFE DE MISION
+        p CURRICULUM VITAE
+        p MARCIAL BOBADILLA GUILLÉN
+        
+        .row
+          .image.col-auto
+            img(src='./images/mission.png', alt='')
+          .wrap.col
+            .wrap.mb-4
+              h4 INFORMACIÓN PERSONAL
+              .row
+                div.col-4
+                  p Apellidos：
+                div.col
+                  p Bobadilla Guillén
+              .row.mt-3
+                div.col-4
+                  p Nomres:
+                div.col
+                  p Marcial
+              .row.mt-3
+                div.col-4
+                  p Fecha de Nacimiento:
+                div.col
+                  p 23 de agosto de 1951
+              .row.mt-3
+                div.col-4
+                  p Esposa: 
+                div.col
+                  p Norma Días de Bobadilla
+              .row.mt-3
+                div.col-4
+                  p Hijo: 
+                div.col
+                  p Luis Enrique Bobadilla Días
+                  
+            .wrap.mb-4
+                h4 ESTUDIOS CURSADOS
+                div.wrap
+                p 1976 Universidad Nacional de Asunción – Facultad de Derecho y Ciencias Sociales Título obtenido: Abogado
+                
+        h4 CARRERA DIPLOMÁTICA
+        div.p-3.mb-3
+          ul.timeline
+            li.pb-5
+              h4 2013
+              p Embajador Extraordinario y Plenipotenciario de la República del Paraguay en la República de China (Taiwán). – 2013 hasta la fecha.
+            li.pb-5
+              h4 2014
+              p Embajador Extraordinario y Plenipotenciario de la República del Paraguay en la República de China (Taiwán). – 2013 hasta la fecha.
+            li.pb-5
+              h4 2013
+              p Embajador Extraordinario y Plenipotenciario de la República del Paraguay en la República de China (Taiwán). – 2013 hasta la fecha.
+            li.pb-5
+              h4 2014
+              p Embajador Extraordinario y Plenipotenciario de la República del Paraguay en la República de China (Taiwán). – 2013 hasta la fecha.
+              
+        h4 IDIOMAS
+        ul
+          li Castellano
+          li Guaraní
+          li Inglés
+          li Portugués
+          li Ruso (Básico)
+
+
+        
+      include components/footer
+      //- include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
