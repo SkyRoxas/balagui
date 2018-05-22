@@ -1,0 +1,54 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('/images/direccion_banner.jpg', '480px')
+      .content.container.my-5
+        h1 TURISMO
+        strong Historical Profile
+        p Starting in the 15th century, Paraguay became the main route to other destinations around the continent. Asunción has been traditionally kn own as “Mother of Cities", serving as a place from where the Spaniards departed to found new Colonies.The Franciscans arrived in Paraguay in the second half of the 16th Century and founded several communities throughout the country. Their cultural influence was enormous, due to the fact that they consolidated the life style of locals and the daily use of both the Spanish and Guaraní Languages. Some of these works of art can be seen in the churches and museums of the cities of Capiatá, Yaguarón, Itá, Altos, Caazapá, Atyrá, Ypané, Piribebuy and Tobatí, just a short ride away from Asunción.  
+          br
+          | The presence of the missionaries of the Company of Jesus (1609 - 1768) was one of the great utopian period experiences in the region that established what was known as the Reductions of Guaraní Tribes. Important testimonies in the country left from that time are: he Ruins of Santísima Trinidad and Jesus (declared World _Heritage Site by UNESCO), San Ignacio Guazú, San Cosme and San Damián, Santiago, Santa María and Santa Rosa. Arts and music flourished during this period and left an artistic legacy of supreme beauty also known as the "Guaraní Baroque".
+        p Paraguay declares its independence from Spain in 1811. A Provisional Government is created and ever since, the country has gone through different periods including two wars, dictatorships, democratic transition and finally constitutional regimes.
+        strong Culture 
+        p Music- Food
+          br
+          | Paraguayan Polka and Guaranias are the typical musical rhythms. Paraguay is the cradle of great musical composers and interpreters such as Agustín Barrios and José Asunción Flores.   “Chipa”, “Mbeyú”, “Chipa Guazú”, “Payaguá Mascada”, and “Sopa Paraguaya” are some of the exquisite traditional meals made with beef, corn, fresh cheese and manioc as their main ingredients.
+        strong Hand Crafts
+        p The popular art manifestations are results of the mixture of cultures, traditions, and available resources.Leather crafts,  “Ñandutí” and “Aó po-í” hand woven fabrics, the typical Guampas to drink "Mate" and "Tereré" infusions, silver handwork, especially the filigree from the City of Luque, the pottery, especially that from the Cities of Itá, Tobatí and Areguá are outstanding. Paraguayan Luthiers, are experts in the production of guitars and harps with noble woods from this land.
+        strong Indigenous art
+        p The art pieces handcrafted by different indigenous communities are made from natural fibers, diverse woods, seeds, and other materials. Worthy of admiration is the art with colorful feathers, carrier of the magic of old ceremonies, with all its color and power.
+        
+        strong Celebrations
+        p During the entire year, towns and cities all over the country recreate the traditional popular celebrations and customs. The celebration of the Immaculate Conception, in Caacupé; the Easter Celebrations in Emboscada, Tañarandy (San Ignacio), and Piribebuy; and San Juan celebration in the entire country as well as the rodeo and folklore festivals in Santiago and San Miguel. 
+        
+        strong Museums
+        p Private as well as public museums and institutions offer the visitors insight into the historical and contemporary artistic manifestations of Paraguayan culture.
+        
+        
+        strong The Human Landscape
+        p Paraguay is a bilingual country. Guaraní, the predominant native language, has cohabited for centuries with Spanish. This mixture of languages has been the source of inspiration for poetry expressed in musical and literature that is read and heard all over the world.
+          br
+          | Paraguay is home to a diversity of indigenous cultures that have offered their botany, zoology, and natural medicine knowledge, to modern sciences and Paraguayan customs. At the same time, their traditional arts including ceremonial songs, crafts, music, and dances enrich the cultural experience of the country. These endemic communities are conformed by five linguistic families: Guaraní, Zamauco, Maskoy, Mataco, and Guaycurú plus twenty ethnic groups living in both regions of the country. 
+          br
+          | The presence of Italian, Catalan, Eastern-European, Middle-Eastern, Japanese, and German descendants that originally arrived in successive migration waves within the last two centuries, contributed to enrich the first Spanish-Guaraní cultural mixture. In the last decades immigration from Asia and other Latin American countries has continued this process.
+        strong The Natural Landscape
+        p Paraguay is a country to be discovered, with the same passion of the early conquers that arrived to these lands of sun and forest. The main attractions are the many cultures and natural ecosystems that can be enjoyed and are shared with neighboring countries: The dry Chaco; the wet Chaco; the Pantanal: the Cerrado; and the Alto Paraná Atlantic Forest with land ecosystems (forests, savannas and low forests), aquatic ecosystems (rivers, streams, lakes and lagoons), and wetlands (marshes, estuaries). Visitors are impressed by the grasslands and marshes in Ñeembucú, the thorny dry-forests of Boquerón, the palm tree savannas of Presidente Hayes, the beautiful hills of the Sierras of Ybytyruzú, the Subtropical Forests of Mbaracayú and San Rafael, and Concepcion's crystal clear water streams.
+        
+        
+                
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();

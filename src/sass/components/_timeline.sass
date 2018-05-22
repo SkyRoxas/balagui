@@ -1,0 +1,18 @@
+ul.timeline
+
+  li
+    position: relative
+    padding-left: 20px
+    &:before
+      content: ''
+      display: block
+      width: 13px
+      height: 13px
+      background: #3E3A39
+      border-radius: 50%
+      position: absolute
+      left: -7px
+      top: 0
+
+  li:not(:last-child)
+    border-left: 1px solid #3E3A39

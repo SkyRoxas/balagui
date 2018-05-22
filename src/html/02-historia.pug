@@ -1,0 +1,55 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('/images/geografia_banner.jpg', '480px')        
+      .content.container.my-5
+        h1 HISTORIA
+        ul.list
+            li.list-item
+                .d-flex
+                    .col
+                        img(src='/images/historia-1.jpg')
+                    .col
+                        h2.title 1541
+                        .sub-title.font-weight-bold.py-2 Elevada a la categoría de ciudad al establecerse el Cabildo
+                        .body Los originales habitantes del Paraguay fueron, principalmente, los guaraníes, quienes legaron la rica lengua que hoy es uno de los idiomas oficiales del país así como vastos conocimientos zoológicos y botánicos, especialmente, de plantas medicinales y cultivos agrícolas. En 1524 el actual territorio del Paraguay fue explorado por Alejo García y en 1528, el navegante Sebastián Gaboto remontó los ríos Paraná y Paraguay. En el actual emplazamiento de la Capital del Paraguay, Juan de Zalazar y Espinoza en 1537 fundó el fuerte Nuestra Señora de la Asunción, elevada a la categoría de ciudad al establecerse el Cabildo en 1541.
+            li.list-item
+                .d-flex
+                    .col
+                        img(src='/images/historia-2.jpg')
+                    .col
+                        h2.title 1609 -1767
+                        .sub-title.font-weight-bold.py-2 Obras arquitectónicas y artísticas
+                        .body Durante la colonia, Asunción fue el eje de la conquista de donde partieron los fundadores de Santa Fe, Corrientes, Concepción del Bermejo, Santa Cruz de la Sierra, Santiago de Jeréz y Ciudad Real y el refundador de la ciudad de Buenos Aires, Juan de Garay. Juntamente con los conquistadores arribaron los religiosos católicos cuyo objetivo fue la acción evangelizadora y la conversión de los pueblos indígenas al cristianismo. Es importante indicar dos interesantes experiencias: la de los sacerdotes franciscanos que en el siglo XVI fundaron sobre las antiguas tavas guaraníes los pueblos o misiones franciscanas de Altos, Itá, Yaguarón, Ypané, Atyrá, Guarambaré, Caazapá, Yuty y la de los jesuitas que entre los años 1609 hasta su expulsión en 1767, fundaron 30 poblados conocidos como “Reducciones de la Provincia del Paraguay”, de los que, a consecuencia de la acción de la naturaleza y el abandono, quedan las ruinas de ocho asentamientos en territorio paraguayo que son una valiosa muestra tanto de la organización urbanística y social como de la calidad de sus obras arquitectónicas y artísticas.
+            li.list-item
+                .d-flex
+                    .col
+                        img(src='/images/historia-3.jpg')
+                    .col
+                        h2.title 1932 - 1935(La Guerra del Chaco)
+                        .sub-title.font-weight-bold.py-2 También con negativas consecuencias para su economía.
+                        .body Lograda su independencia de la Corona de España en 1811, el Paraguay bajo la férrea dictadura de Gaspar Rodríguez de Francia y el constructivo gobierno de Carlos Antonio López logró mantener su soberanía y alcanzó un importante desarrollo económico y cultural. Lamentablemente, entre los años 1865-1870 sobrevino la Guerra contra la Triple Alianza integrada por Brasil, Argentina y Uruguay, que dejó diezmada su población, mutilado su territorio y destruidas sus fuentes industriales. Entre 1932 y 1935 se desencadenó la Guerra del Chaco, también con negativas consecuencias para su economía.
+            li.list-item
+                .d-flex
+                    .col
+                        img(src='/images/historia-4.jpg')
+                    .col
+                        h2.title 
+                        .sub-title.font-weight-bold.py-2 Gran desafío del desarrollo sostenible y sustentable. 
+                        .body El largo régimen autoritario del General Alfredo Stroessner fue reemplazado en 1989 por un sistema democrático representativo que le ha permitido integrarse paulatinamente a un mundo cada vez más globalizado y responder al gran desafío del desarrollo sostenible y sustentable. 
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
