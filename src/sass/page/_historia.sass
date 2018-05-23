@@ -7,10 +7,10 @@
         &::before
             position: absolute
             left: 48%
-            top: 3%
+            top: 4%
             content: ""
             width: 2px
-            height: 97%
+            height: 95%
             background-color: #292A3A
             transform: translate(-50%,0)
             @media (min-width: 1201px)
@@ -18,10 +18,6 @@
         .list-item
             padding: 20px
             overflow: hidden
-            border-bottom: 1px solid black
-            @media (min-width: 992px)
-                border-bottom: none
-
             .d-lg-flex
                 margin: -45px -20px
                 @media (min-width: 992px)
@@ -38,24 +34,26 @@
                             @media (min-width: 992px)
                                 display: inline-block
                     &.content
-                        background-color: white
-                        z-index: 1
-                        border: 1px solid black
-                        @media (min-width: 992px)
-                            border: none
-                    .title
-                        &::before
-                            position: absolute
-                            left: 48%
-                            top: -30px
-                            background-color: #292A3A
-                            width: 15px
-                            height: 15px
-                            content: ""
-                            border-radius: 50%
-                            transform: translate(-50%,0)
+                        .bg
+                            background-color: white
+                            z-index: 1
+                            padding: 30px 20px
+                            box-shadow: -1px 9px 55px -14px rgba(0,0,0,0.75)
                             @media (min-width: 992px)
-                                left: -20px
-                                top: 85px
-                            @media (min-width: 1201px)
-                                left: -70px
+                                box-shadow: none
+                            .title
+                                &::before
+                                    position: absolute
+                                    left: 48%
+                                    top: -10px
+                                    background-color: #292A3A
+                                    width: 15px
+                                    height: 15px
+                                    content: ""
+                                    border-radius: 50%
+                                    transform: translate(-50%,0)
+                                    @media (min-width: 992px)
+                                        left: -19px
+                                        top: 116px
+                                    @media (min-width: 1201px)
+                                        left: -69px
