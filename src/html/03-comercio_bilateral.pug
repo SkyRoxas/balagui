@@ -1,0 +1,141 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('/images/direccion_banner.jpg', '480px')
+      #page
+        .container
+          main
+            h1(class="page-title") EXPORTACIONES BILATERALES
+            .table_content
+              h2.table_title Exportaciones paraguayas a Taiwán </br>(Valores en USD; datos VUE)
+              #table_wrapper
+                table.tg
+                  tr
+                    th.tg-031e Producto
+                    th.tg-031e 2016
+                    th.tg-031e 2017
+                    th.tg-031e Ene-Mar 2018
+                  tr
+                    td.tg-031e 202 Carne bovina congelada
+                    td.tg-031e 3,232,949
+                    td.tg-031e 39,572,077
+                    td.tg-031e 4,253,353
+                  tr
+                    td.tg-031e 4104 Cueros bovinos o equinos curtidos
+                    td.tg-031e -
+                    td.tg-031e 190,307
+                    td.tg-031e 252,904 
+                  tr
+                    td.tg-031e 2009 Jugos de frutas o de hortalizas
+                    td.tg-031e -
+                    td.tg-031e 19,811
+                    td.tg-031e 10,147 
+                  tr
+                    td.tg-031e 4407 Madera aserrada longitudinalmente
+                    td.tg-031e 424,667
+                    td.tg-031e 416,452
+                    td.tg-031e 9,500
+                  tr
+                    td.tg-031e 1207 Las demás oleaginosas incl. sésamo
+                    td.tg-031e 1,089,006
+                    td.tg-031e 412,644
+                    td.tg-031e 3,850 
+                  tr
+                    td.tg-031e 5201 Algodón sin cardar ni peinar
+                    td.tg-031e 121,337
+                    td.tg-031e 152,265
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 1007 Sorgo de grano (granífero)
+                    td.tg-031e 497,587
+                    td.tg-031e 97,276
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 201 Carne bovina fresca o refrigerada
+                    td.tg-031e 93,152
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 1701 Azúcar
+                    td.tg-031e 37,130
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 1515 Demás grasas y aceites vegetales fijos
+                    td.tg-031e 1,200
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 1201 Semillas de soja
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 3301 Aceites esenciales
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 4406 Durmientes de madera para vías férreas
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 903 Yerba mate
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 1703  Melaza de azúcar
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 7204 Chatarra de hierro o acero
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 1005 Maíz
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 1108 Almidón y fécula; inulina
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 4409 Madera perfilada o de parquet
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e 9601 Marfil, hueso, cuernos, astas etc., trabajados
+                    td.tg-031e -
+                    td.tg-031e -
+                    td.tg-031e -
+                  tr
+                    td.tg-031e Total
+                    td.tg-031e 15,497,028
+                    td.tg-031e 40,860,832
+                    td.tg-031e 4,529,754
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
+
+
+
