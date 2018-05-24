@@ -1,0 +1,342 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body.page-counsul-visa
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/banner_consul_visa.png', '343px')
+      .content.container.my-5
+        h1 Países cuyos nacionales no precisan visas en pasaportes comunes.
+        
+        .container
+          ul#country.row
+          ul#country-red.row.justify-content-end.mt-0
+        
+        .container.mb-5    
+          .county-doc.py-3
+            ul.row.mb-4
+              li.col-md-3 
+                .visa-icon.yellow
+                  div Pueden Ingresar al país con el documento nacional de identidad.
+              li.col-md-3 
+                .visa-icon.green
+                  div Decreto del Gobierno del Paraguay por el cual se determina unilateralmente la exención de visas.
+              li.col-md-3 
+                .visa-icon.blue
+                  div Nacionales del referido país pueden entrar sin visado para una estadía de hasta 30 días.
+              li.col-md-3 
+                .visa-icon.orange
+                  div Acuerdo Bilateral.
+          
+            .visa-icon.red
+                  div Paraguay: Decreto del Poder Ejecutivo No. 7.423 del 6 de julio de 2017, y Taiwán: a través del Anuncio Oficial No. 16 de fecha 12 de julio de 2017 del Ministerio de Relaciones Exteriores (MOFA), suprimieron la necesidad de visas en los pasaportes comunes de ambos lados.
+        
+        .container
+          div
+            p Anuncio Oficial No. 16 de fecha 12 de julio de 2017 del Ministerio de Relaciones Exteriores (MOFA), suprimieron la necesidad de visas en los pasaportes comunes de ambos lados.
+            p 
+            p Para los titulares de pasaporte diplomático, oficial y común de Taiwán tiene exoneración de visado para entrar al territorio paraguayo hasta 90 días máximo por cada viaje.
+            p
+            p Para los extranjeros que residen en Taiwan con ARC, hagan la directa consulta a nuestra Oficina. 
+            p 
+            p 
+            a.download Supresion_de_Visas_-_oct17
+        
+      include components/footer
+      //- include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
+    script.
+        const country = [
+          {
+            name: 'Alemania',
+            color: 'orange'
+          },
+          {
+            name: 'Chipre',
+            color: 'green'
+          },
+          {
+            name: 'Eslovenia',
+            color: 'orange'
+          },
+          {
+            name: 'Hungría',
+            color: 'orange'
+          },
+          {
+            name: 'Luxemburgo',
+            color: 'orange'
+          },
+          {
+            name: 'República Checa',
+            color: 'orange'
+          },
+          {
+            name: 'Andorra',
+            color: 'green'
+          },
+          {
+            name: 'Colombia',
+            color: 'orange'
+          },
+          {
+            name: 'España',
+            color: 'orange'
+          },
+          {
+            name: 'Irlanda',
+            color: 'green'
+          },
+          {
+            name: 'Malta',
+            color: 'green'
+          },
+          {
+            name: 'República de a',
+            color: 'orange'
+          },
+          {
+            name: 'Argentina',
+            color: 'yellow'
+          },
+          {
+            name: 'Corea',
+            color: 'blue'
+          },
+          {
+            name: 'Estonia',
+            color: 'green'
+          },
+          {
+            name: 'Islandia',
+            color: 'orange'
+          },
+          {
+            name: 'Nicaragua',
+            color: 'green'
+          },
+          {
+            name: 'Sudáfrica',
+            color: ''
+          },
+          {
+            name: 'Austria',
+            color: 'orange'
+          },
+          {
+            name: 'Costa Rica',
+            color: 'orange'
+          },
+          {
+            name: 'Finlandia',
+            color: 'orange'
+          },
+          {
+            name: 'Israel',
+            color: 'orange'
+          },
+          {
+            name: 'Noruega',
+            color: 'orange'
+          },
+          {
+            name: 'Rumania',
+            color: 'green'
+          },
+          {
+            name: 'Bélgica',
+            color: 'orange'
+          },
+          {
+            name: 'Croacia',
+            color: 'green'
+          },
+          {
+            name: 'Francia',
+            color: 'orange'
+          },
+          {
+            name: 'Italia',
+            color: 'orange'
+          },
+          {
+            name: 'Panamá',
+            color: 'orange'
+          },
+          {
+            name: 'Suecia',
+            color: 'orange'
+          },
+          
+          {
+            name: 'Bélgica',
+            color: 'orange'
+          },
+          {
+            name: 'Croacia',
+            color: 'green'
+          },
+          {
+            name: 'Francia',
+            color: 'orange'
+          },
+          {
+            name: 'Italia',
+            color: 'orange'
+          },
+          {
+            name: 'Panamá',
+            color: 'orange'
+          },
+          {
+            name: 'Suecia',
+            color: 'orange'
+          },
+          {
+            name: 'Bolivia',
+            color: 'yellow'
+          },
+          {
+            name: 'Dinamarca',
+            color: 'orange'
+          },
+          {
+            name: 'Grecia',
+            color: 'orange'
+          },
+          {
+            name: 'Japón',
+            color: 'green'
+          },
+          {
+            name: 'Perú',
+            color: 'green'
+          },
+          {
+            name: 'Turquía',
+            color: 'orange'
+          },
+          {
+            name: 'Brasil',
+            color: 'yellow'
+          },
+          {
+            name: 'Ecuador',
+            color: 'orange'
+          },
+          {
+            name: 'Guatemala',
+            color: 'green'
+          },
+          {
+            name: 'Letonia',
+            color: 'orange'
+          },
+          {
+            name: 'Polonia',
+            color: 'green'
+          },
+          {
+            name: 'Uruguay',
+            color: 'yellow'
+          },
+          {
+            name: 'Bulgaria',
+            color: 'orange'
+          },
+          {
+            name: 'El Salvor',
+            color: 'green'
+          },
+          {
+            name: 'Holanda',
+            color: 'orange'
+          },
+          {
+            name: 'Liechtenstein',
+            color: 'orange'
+          },
+          {
+            name: 'Portugal',
+            color: 'orange'
+          },
+          {
+            name: 'Portugal',
+            color: 'green'
+          },
+          {
+            name: 'Chile',
+            color: 'yellow'
+          },
+          {
+            name: 'Eslovaquia',
+            color: 'green'
+          },
+          {
+            name: 'Honduras',
+            color: 'green'
+          },
+          {
+            name: 'Lituania',
+            color: 'green'
+          },
+          {
+            name: 'Lituania',
+            color: 'orange'
+          },
+          {
+            name: 'México',
+            color: 'green'
+          }
+        ]
+        
+        const redCountry = [
+          {
+            name: 'Taiwán',
+            color: 'orange'
+          }
+        ]
+        
+        const countryDOM = document.getElementById('country')
+        const countryRedDom = document.getElementById('country-red')
+        let itemsCountryStr = ''
+        let itemsRedCountryStr = ''
+        
+        for(let i=0; i < country.length; i++){
+          let item = country[i]
+          itemsCountryStr += `
+            <li class="col-md-2">
+              <div class="visa-icon ${item.color}">
+                ${item.name}
+              </div>
+            </li>
+          `
+        }
+        
+        for(let i =0; i< redCountry.length; i++){
+          let item = redCountry[i]
+          itemsRedCountryStr += `
+            <li class="col-md-2">
+              <div class="visa-icon red">
+                <div class="visa-icon ${item.color}">
+                  ${item.name}
+                </div>
+              </div>
+            </li>
+          `
+        }
+        
+        countryDOM.innerHTML = itemsCountryStr
+        countryRedDom.innerHTML = itemsRedCountryStr
+      
+    script
