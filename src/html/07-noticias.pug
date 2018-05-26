@@ -10,15 +10,12 @@ html
           include components/header_top
           include components/menu
       #banner
-        +cover-banner('/images/news_banner.png', '480px')
+        +cover-banner('./images/news_banner.png', '480px')
       .content.container.my-5
-        h1.my-2 NOTICIAS
+        h1.my-5 NOTICIAS
         section.noticias_wrap
           include components/news_list
           include components/pager
-          
-              
-      
              
       include components/footer
       include components/preload

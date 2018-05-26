@@ -1,7 +1,7 @@
 include mixin/cover-banner
 
 doctype html
-html
+html.page-direccion
   include components/head
   body
     #page(style="overflow: hidden;")
@@ -10,23 +10,33 @@ html
           include components/header_top
           include components/menu
       #banner
-        +cover-banner('/images/direccion_banner.jpg', '480px')
+        +cover-banner('./images/direccion_banner.jpg', '480px')
       .content.container.my-5
         h1 DIRECCION
-        p Dirección: 7th. Floor No. 9-1 Lane 62 Tien Mu West Rd. Taipei, Taiwan 
-        p Teléfono: (02) 2873-6310 2873-6311 
-        p FAX: (02) 2873-6312 
-        p Correo electrónico: embapartaiwan@embapartwroc.com.tw 
-        p Teléfono de emergencia: (+886) 0928-391-360 
-        p *Este número es sólo para casos de emergencia. 
-        p 
-        p TRANSPORTE PÚBLICO (大眾交通) 
+        .d-flex
+          strong.mr-2 Dirección:
+          p 7th. Floor No. 9-1 Lane 62 Tien Mu West Rd. Taipei, Taiwan 
+        .d-flex
+          strong.mr-2 Teléfono:
+          p (02) 2873-6310 2873-6311 
+        .d-flex
+          strong.mr-2 FAX:
+          p (02) 2873-6312 
+        .d-flex
+          strong.mr-2 Correo electrónico:
+          p embapartaiwan@embapartwroc.com.tw 
+        .d-flex
+          strong.mr-2 Teléfono de emergencia:
+          p (+886) 0928-391-360 
+        p(style="color:#B80D23") *Este número es sólo para casos de emergencia. 
+        br
+        h5 TRANSPORTE PÚBLICO
         p 1. Estación de Metro más cercana: Shipai, Línea Danshui (roja). 
         p 2. Se puede tomar taxi o bus al salir de la estación Shipai (aprox. 10 mins.) 
         p 3. Para tomar bus: Saliendo de la estación MRT girar hacia la derecha, delante de KFC hay paradas de buses. 
         p Los buses que llegan son: 
-        p Red 12 (紅12) 
-        p Red 19 (紅19)
+        p(style="color:#B80D23") Red 12 (紅12) 
+        p(style="color:#B80D23") Red 19 (紅19)
         p 645
         p 902
       include components/google_map          
