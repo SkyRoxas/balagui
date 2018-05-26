@@ -1,0 +1,39 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/news_banner.png', '480px')
+      .content.container.my-5
+        h5 Exportación de soja en abril es la más alta en la historia económica del país
+        br
+        p Diario Ultima Hora 9 de mayo de 2014
+        p Exportación de soja en abril es la más alta en la historia económica del país
+        p En abril de este año, Paraguay exportó 897.224 toneladas de soja, por las cuales ingresaron 441,7 millones de dólares. Ambas cifras son las más elevadas desde que existen registros oficiales.
+        p Las exportaciones de soja de Paraguay totalizaron 897.224 toneladas y representaron ingresos por 441,7 millones de dólares en abril último, según los datos de comercio exterior del Banco Central.
+        p Estas cifras son las más altas desde que se cuenta con un registro oficial (1994) y de la historia económica de Paraguay misma, ya que en los años previos, ni el área de siembra ni la tecnología eran las que se tienen actualmente, como para suponer que se pudieran superar los números mencionados.
+        p Con los datos de abril, el primer cuatrimestre del año registró 1.432 millones de dólares de ingreso solo por exportaciones de la oleaginosa por un volumen de 3,06 millones de toneladas, lo que implica una expansión de 21,6% en término de divisas y de 29,5% en toneladas.
+        p La soja es el primer rubro de exportación del país, con una participación del 39% en la canasta total de envíos de Paraguay al mundo.
+        p Sin embargo, pese a este nivel de divisas que genera la soja y en los últimos meses también sus derivados industrializados (harina y aceites), su aporte a las arcas del Estado es irrisorio comparado con todo el dinero que genera el negocio sojero en términos de divisas, según críticas provenientes desde el propio Ministerio de Hacienda.
+        p El impuesto a la renta a las actividades agropecuarias (Imagro) aportó al fisco 15,9 millones de dólares el año pasado, equivalente al 0,9% del total recaudado en concepto tributario.
+        p Desde diversos sectores han criticado el escaso aporte del sector agrícola al país, sea en cantidad de ingresos para el Estado como en generación de empleos.
+        p En contrapartida, quienes reivindican el modelo agroexportador señalan la importancia del ingreso de divisas para mantener el tipo de cambio en los niveles actuales, además del movimiento económico indirecto que genera el circuito del agro y más recientemente la agroindustria.
+        p En ese sentido, cabe mencionar que en las exportaciones de harinas se ha registrado igualmente un récord de 336.520 toneladas y 161,4 millones de dólares en abril, volúmenes que van creciendo a medida que avanza el procesamiento de materia prima. Entre enero y abril ya acumulan 388,3 millones de dólares y 806.304 toneladas exportadas, siempre de acuerdo con los registros oficiales.
+        p TOTAL. Las exportaciones totales de Paraguay al cierre del primer cuatrimestre del año alcanzaron 3.640 millones de dólares, 15,5% más que en el mismo periodo del 2013.
+        p Los rubros que mayor expansión tuvieron en término de divisas durante los primeros cuatro meses del 2014 son el de harinas, con 94% más; aceites, con 32%.
+        p Ya por detrás de estos y de la soja (21,6%), la carne observó un incremento de 17%, al culminar el cuarto mes del año, ingresando 357,9 millones de dólares por este concepto.
+             
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
