@@ -12,7 +12,7 @@ const weatherInfo = (city, offset, imgSrc) => {
 
   openWeather.setCity(city)
 
-  openWeather.setAPPID('c8d534899e3021e14893ca5efed156dc')
+  openWeather.setAPPID('2554b5f7e2e813613dd495f166def516')
 
   return new Promise((resolve, reject) => {
       openWeather.getAllWeather(function (err, JSONObj) {
@@ -37,10 +37,7 @@ const weatherInfo = (city, offset, imgSrc) => {
   });
 }
 
-(async () =>{
-  if (!document.getElementById('weatherInfo')) {
-    return
-  }
+(async () => {
   let Asuncion = await weatherInfo('Asuncion', -4, './images/pa.png')
   document.getElementById('weatherInfo').appendChild(Asuncion.html)
   let Taipei = await weatherInfo('Taipei', 8, './images/tw.png')
