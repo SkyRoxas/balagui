@@ -1,0 +1,62 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body.page-convenios
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/convenios-banner.png', '475px')
+      .content.container.my-5
+        h1.my-5 
+          p Instrumentos Bilaterales suscritos entre
+          p la República del Paraguay y la República de China (Taiwán) 
+
+        table#bilaterales
+          thead
+            tr
+              th(rowspan="0") No
+              th(rowspan="0") NOMBRE
+              th(colspan="4") FIRMA
+              th(rowspan="0") 
+                div ENTRADA
+                div EN VIGOR
+            tr
+              th LUGAR
+              th FECHA
+              th LUGAR
+              th FECHA
+          tbody
+            tr
+              td 1
+              td(style="max-width: 300px; text-align:left;") Acuerdo por Notas Diplomáticas para el Establecimiento de las Relaciones Diplomáticas.
+              td Caracas
+              td 9/VII/1957
+              td -----
+              td -----
+              td 12/VII/1957
+      
+             
+      include components/footer
+      //- include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
+    script.
+      const data = [
+        {
+          id: '01'
+          body: 'Acuerdo por Notas Diplomáticas para el Establecimiento de las Relaciones Diplomáticas.'
+          coutry: 'Caracas',
+          fecha: '9/VII/1957',
+          lugar: '',
+          fecha: '',
+          entrada: '12/VII/1957'
+        }
+      ]
