@@ -1,0 +1,34 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('/images/direccion_banner.jpg', '480px')
+      #page
+        .container
+          main
+            h1(class="page-title" style="display:none") Aranceles Consulares
+                
+                
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
+
+
+
+
+
+
+
+

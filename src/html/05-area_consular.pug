@@ -1,0 +1,41 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body.page-counsul-visa
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/area_consular_banner.png', '480px')
+        .content.container.my-5
+          h1 AREA CONSULAR
+          p La Sección Consular de la Embajada de la República del Paraguay en la República de China (Taiwán) no tiene concurrencia para atender los asuntos consulares originados en otros países de la región. Solamente los originados dentro de la República de China (Taiwán). 
+          p Enlaces de las Embajadas del Paraguay en Asia y Oceanía: 
+          p(style="color:#D55514;") Embajada en Australia 
+            br
+            | Embajada en Japón 
+            br
+            | Embajada en Corea del Sur 
+            br
+            | Embajada en India 
+          p(style="color:#0038A8;") Atención al público: de lunes a viernes, 09:00 – 12:00 y 13:00 – 16:00 
+            br
+            | Observación: Los aranceles consulares son pagados por los interesados a los números de cuenta bancaria en nombre de nuestra Embajada en 
+            br
+            | CTBC banco (North Tianmu Branch), deben fijarse en el horario del banco, que atiende hasta las 15:30. 
+            br
+            | Otros trámites (con previa cita): de lunes a viernes 
+            br
+            | *Excepto los fines de semana y los días feriados.
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
+  
