@@ -49,14 +49,646 @@ html
     script(src='./js/script.js')
     script new WOW().init();
     script.
-      const data = [
-        {
-          id: '01'
-          body: 'Acuerdo por Notas Diplomáticas para el Establecimiento de las Relaciones Diplomáticas.'
-          coutry: 'Caracas',
-          fecha: '9/VII/1957',
-          lugar: '',
-          fecha: '',
+      const data = [{
+          no: '01',
+          doc: 'Acuerdo por Notas Diplomáticas para el Establecimiento de las Relaciones Diplomáticas.',
+          country: 'Caracas',
+          fec: '9/VII/1957',
+          lugar: '-----',
+          fecha: '-----',
           entrada: '12/VII/1957'
+        },
+        {
+          no: '02',
+          doc: 'Convenio Cultural.',
+          country: 'Asunción',
+          fec: '18/VIII/1961',
+          lugar: '761',
+          fecha: '15/XII/1961',
+          entrada: '11/V/1962'
+        },
+        {
+          no: '03',
+          doc: 'Tratado de Comercio y de Cooperación Económica.',
+          country: 'Taipei',
+          fec: '11/V/1962',
+          lugar: '811',
+          fecha: '18/VII/1962',
+          entrada: '29/XII/1962'
+        },
+        {
+          no: '04',
+          doc: 'Acuerdo por Notas Reversales relativo al Artículo 5 del Tratado de Comercio y de Cooperación Económica.',
+          country: 'Taipei',
+          fec: '11/ V/1962',
+          lugar: '------',
+          fecha: '------',
+          entrada: '29/XII/1962'
+        },
+        {
+          no: '05',
+          doc: 'Protocolo Adicional al Tratado de Comercio y de Cooperación Económica.',
+          country: 'Taipei',
+          fec: '11/ V/1962',
+          lugar: '------',
+          fecha: '------',
+          entrada: '11/V/1962'
+        },
+        {
+          no: '06',
+          doc: 'Tratado de Amistad',
+          country: 'Asunción',
+          fec: '7/VI/1968',
+          lugar: '12',
+          fecha: '4/IX/1968',
+          entrada: '11/II/1969'
+        },
+        {
+          no: '07',
+          doc: 'Acta sobre Cooperación Técnica y Económica.',
+          country: 'Asunción',
+          fec: '26/VIII/1971',
+          lugar: '------',
+          fecha: '------',
+          entrada: '------'
+        },
+        {
+          no: '08',
+          doc: 'Acuerdo por Notas Reversales que prorroga la vigencia por 10 años el Tratado de Comercio y de Cooperación Económica, su Protocolo Adicional y las Notas Reversales del 11/V/1962.',
+          country: 'Asunción',
+          fec: '28/XII/1972',
+          lugar: '------',
+          fecha: '------',
+          entrada: '28/XII/1972'
+        },
+        {
+          no: '09',
+          doc: 'Convenio sobre Turismo.',
+          country: 'Asunción',
+          fec: '15/II/1973',
+          lugar: '398',
+          fecha: '07/IX/1973',
+          entrada: '15/II/1973'
+        },
+        {
+          no: '10',
+          doc: 'Acuerdo por Notas Reversales relativo a la conformación de la Misión Técnica Agrícola China en el Paraguay. (N.R. N° 1/73.)',
+          country: 'Asunción',
+          fec: '15/II/1973',
+          lugar: '------',
+          fecha: '------',
+          entrada: '15/II/1973'
+        },
+        {
+          no: '11',
+          doc: 'Convenio sobre Inversiones.',
+          country: 'Taipei',
+          fec: '25/IX/1975',
+          lugar: '555',
+          fecha: '17/XII/1975',
+          entrada: '12/I/1976'
+        },
+        {
+          no: '12',
+          doc: 'Declaración Conjunta de Cancilleres.',
+          country: 'Taipei',
+          fec: '25/IX/1975',
+          lugar: '------',
+          fecha: '------',
+          entrada: '------'
+        },
+        {
+          no: '13',
+          doc: 'Convenio sobre Inversiones.',
+          country: 'Taipei',
+          fec: '25/IX/1975',
+          lugar: '554',
+          fecha: '17/XII/1975',
+          entrada: '15/I/1976'
+        },
+        {
+          no: '14',
+          doc: 'Declaración Conjunta de Cancilleres.',
+          country: 'Taipei',
+          fec: '12/XII/1990',
+          lugar: '------',
+          fecha: '------',
+          entrada: '------'
+        },
+        {
+          no: '15',
+          doc: 'Comunicado Conjunto de Cancilleres.',
+          country: 'Asunción',
+          fec: '3/III/1982',
+          lugar: '------',
+          fecha: '------',
+          entrada: '------'
+        },
+        {
+          no: '16',
+          doc: 'Tratado de Extradición.',
+          country: 'Taipei',
+          fec: '24/IV/1986',
+          lugar: '1.208',
+          fecha: '29/X/1986',
+          entrada: '25/VI/1987'
+        },
+        {
+          no: '17',
+          doc: 'Acta Final de la II Conferencia sobre Cooperación Económica.',
+          country: 'Asunción',
+          fec: '18/VIII/1988',
+          lugar: '------',
+          fecha: '------',
+          entrada: '------'
+        },
+        {
+          no: '18',
+          doc: 'Declaración Conjunta Presidencial.',
+          country: 'Taipei',
+          fec: '20/VI/1990',
+          lugar: '------',
+          fecha: '------',
+          entrada: '------'
+        },
+        {
+          no: '19',
+          doc: 'Convenio de Cooperación Educacional en el Campo Científico y Tecnológico.',
+          country: 'Taipei',
+          fec: '19/VI/1990',
+          lugar: '113',
+          fecha: '3/I/1991',
+          entrada: '19/VI/1990'
+        },
+        {
+          no: '20',
+          doc: 'Acta de la IV Conferencia sobre Cooperación Económica.',
+          country: 'Taipei',
+          fec: '20/VI/1990',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '21',
+          doc: 'Acta  de la V Conferencia sobre Cooperación Económica.',
+          country: 'Asunción',
+          fec: '15/II/1992',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '22',
+          doc: 'Convenio sobre Mutua Garantía de Inversiones.',
+          country: 'Taipei',
+          fec: '6/IV/1992',
+          lugar: '29',
+          fecha: '11/IX/1992',
+          entrada: '11/IX/1992'
+        },
+        {
+          no: '23',
+          doc: 'Convenio para Evitar la Doble Imposición y Prevenir la Evasión Fiscal con Respecto a Impuestos a la Renta.',
+          country: 'Asunción',
+          fec: '28/IV/1994',
+          lugar: '3972',
+          fecha: '6/V/2010',
+          entrada: '3/VI/2010'
+        },
+        {
+          no: '24',
+          doc: 'Acuerdo por Notas Reversales relativo a la Donación de 20.000.000 US$ para la Construcción de una Nueva Sede para el Congreso Nacional. (N.R. N° 18/94).',
+          country: 'Asunción',
+          fec: '21/XII/1994',
+          lugar: '560',
+          fecha: '28/IV/1995',
+          entrada: '03/V/1995'
+        },
+        {
+          no: '25',
+          doc: 'Protocolo de Actualización del Tratado de Comercio y de Cooperación Económica.',
+          country: 'Taipei',
+          fec: '26/VIII/1995',
+          lugar: '916',
+          fecha: '31/VII/1996',
+          entrada: '11/XI/1996'
+        },
+        {
+          no: '26',
+          doc: 'Memorándum de Entendimiento sobre el fortalecimiento del Plan de Cooperación Técnico – Agrícola.',
+          country: 'Taipei',
+          fec: '26/VIII/1995',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '26/VIII/1995'
+        },
+        {
+          no: '27',
+          doc: 'Carta de Intención sobre Cooperación en el Estudio de la Planificación de una Nueva Ciudad de Asunción.',
+          country: 'Taipei',
+          fec: '26/VIII/1995',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '05/X/1998'
+        },
+        {
+          no: '28',
+          doc: 'Memorándum de Entendimiento para la Promoción de un Parque Industrial en la República del Paraguay.',
+          country: 'Taipei',
+          fec: '26/VIII/1995',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '26/VIII/1995'
+        },
+        {
+          no: '29',
+          doc: 'Comunicado Conjunto de Presidentes.',
+          country: 'Taipei',
+          fec: '26/VIII/1995',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '30',
+          doc: 'Acta de la VIII Conferencia sobre Cooperación Económica.',
+          country: 'Taipei',
+          fec: '29/VIII/1995',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '31',
+          doc: 'Acuerdo por Notas Reversales relativo al Plan de Modernización Cibernética de la Cancillería Nacional. (N.R. N° 5/96.)',
+          country: 'Asunción',
+          fec: '14/VIII/1996',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '14/VIII/1996'
+        },
+        {
+          no: '32',
+          doc: 'Acuerdo por Notas Reversales  para la Construcción de un Puente entre la ciudad de Asunción y la Región Occidental. (N.R. N° 9/97.)',
+          country: 'Asunción',
+          fec: '17/IX/1997',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '17/IX/1997'
+        },
+        {
+          no: '33',
+          doc: 'Memorándum de Entendimiento sobre Cooperación Financiera al Sector Agrícola.',
+          country: 'Asunción',
+          fec: '17/IX/1997',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '17/IX/1997'
+        },
+        {
+          no: '34',
+          doc: 'Declaración Conjunta de Presidentes.',
+          country: 'Asunción',
+          fec: '17/IX/1997',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '35',
+          doc: 'Acuerdo de Transporte Aéreo.',
+          country: 'Asunción',
+          fec: '17/IX/1997',
+          lugar: '1.300',
+          fecha: '15/VII/1998',
+          entrada: '30/VII/1998'
+        },
+        {
+          no: '36',
+          doc: 'Acuerdo por Notas Reversales sobre el Fomento al Comercio y la Capacitación de Recursos Humanos. (N.R. N° 8/97.)',
+          country: 'Asunción',
+          fec: '17/IX/1997',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '17/IX/1997'
+        },
+        {
+          no: '37',
+          doc: 'Protocolo sobre Facilitación Comercial Complementario al Tratado de Comercio y de Cooperación Económica.',
+          country: 'Asunción',
+          fec: '17/IX/1997',
+          lugar: '1.370',
+          fecha: '26/XI/1998',
+          entrada: '7/IV/1999'
+        },
+        {
+          no: '38',
+          doc: 'Acuerdo por Notas Reversales sobre Cooperación Económica No Reembolsable para la Implementación de la Red Metropolitana en la Cancillería. N.R. N° 10/97.',
+          country: 'Asunción',
+          fec: '10/X/1997',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '10/X/1997'
+        },
+        {
+          no: '39',
+          doc: 'Acuerdo por Notas Reversales sobre modificación del Artículo XIX Numeral 1, del Acuerdo de Transporte Aéreo. (N.R. N° 3/98.)',
+          country: 'Asunción',
+          fec: '3/III/1998',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '3/III/1998'
+        },
+        {
+          no: '40',
+          doc: 'Memorándum de Entendimiento sobre Programas de Cooperación Económica.',
+          country: 'Asunción',
+          fec: '17/VIII/1998',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '17/VIII/1998'
+        },
+        {
+          no: '41',
+          doc: 'Acuerdo por Notas Reversales sobre Cooperación Económica No Reembolsable a ser destinada al Proyecto de Exportación de Rubros Hortícolas, Frutas, Flores y Ganado Menor.',
+          country: 'Asunción',
+          fec: '5/X/1998',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '5/X/1998'
+        },
+        {
+          no: '42',
+          doc: 'Memorándum de Entendimiento sobre el Plan de Acción.',
+          country: 'Taipei',
+          fec: '16/IX/1999',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '16/IX/1999'
+        },
+        {
+          no: '43',
+          doc: 'Comunicado Conjunto Presidencial.',
+          country: 'Taipei',
+          fec: '20/IX/1999',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '44',
+          doc: 'Acta de la XII Conferencia sobre Cooperación Económica.',
+          country: 'Taipeia',
+          fec: '22/XI/2000',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '45',
+          doc: 'Acuerdo sobre Protección Mutua de los Derechos de la Propiedad Intelectual.',
+          country: 'Taipei',
+          fec: '22/XI/2000',
+          lugar: '1871',
+          fecha: '8/IV/2002',
+          entrada: '10/VI/2002'
+        },
+        {
+          no: '46',
+          doc: 'Memorándum de Entendimiento sobre Plan Estratégico de Inversión y Comercio.',
+          country: 'Asunción',
+          fec: '01/VI/2001',
+          lugar: '2330',
+          fecha: '04/XII/2003',
+          entrada: '11/II/2004'
+        },
+        {
+          no: '47',
+          doc: 'Declaración Conjunta Presidencial.',
+          country: 'Asunción',
+          fec: '01/VI/2001',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '48',
+          doc: 'Memorándum de Entendimiento sobre el Plan de Acción.',
+          country: 'Taipei',
+          fec: '24/VIII/2001',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '24/VIII/2001'
+        },
+        {
+          no: '49',
+          doc: 'Acuerdo para la Supresión de Visas en Pasaportes Diplomáticos y Oficiales',
+          country: 'Taipei',
+          fec: '21/VIII/2002',
+          lugar: '2143',
+          fecha: '25/VII/2003',
+          entrada: '5/IX/2003'
+        },
+        {
+          no: '50',
+          doc: 'Memorándum de Entendimiento sobre Creación de un Mecanismo de Consulta y Coordinación entre los Ministerios de Relaciones Exteriores.',
+          country: 'Taipei',
+          fec: '21/VIII/2002',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '21/VIII/2002'
+        },
+        {
+          no: '51',
+          doc: 'Declaración Conjunta entre los Vicepresidentes.',
+          country: 'Asunción',
+          fec: '15/VIII/2003',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '52',
+          doc: 'Memorándum entre la República del Paraguay y la República de China.',
+          country: 'Taipei',
+          fec: '10/II/2004',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '53',
+          doc: 'Declaración Conjunta entre Vicepresidentes.',
+          country: 'Taipei',
+          fec: '12/II/2004',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '54',
+          doc: 'Declaración Conjunta Presidencial.',
+          country: 'Taipei',
+          fec: '24/V/2004',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '55',
+          doc: 'Memorándum sobre Agenda bilateral.',
+          country: 'Taipei',
+          fec: '24/V/2004',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '24/V/2004'
+        },
+        {
+          no: '56',
+          doc: 'Acta de la Decimocuarta Conferencia sobre Cooperación.',
+          country: 'Asunción',
+          fec: '10/VIII/2004',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '57',
+          doc: 'Acuerdo sobre Envío de Voluntarios.',
+          country: 'Taipei',
+          fec: '20/XII/2005',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '27/XI/2007'
+        },
+        {
+          no: '58',
+          doc: 'Comunicado Conjunto de Cancilleres.',
+          country: 'Taipei',
+          fec: '20/XII/2005',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '59',
+          doc: 'Declaración Conjunta Presidencial.',
+          country: 'Asunción',
+          fec: '06/05/2006',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '60',
+          doc: 'Acuerdo por Notas Verbales sobre la Modificación del Acuerdo por Notas Reversales del 15 de febrero de 1973 relativo a la conformación de la Misión Técnica Agrícola China en el Paraguay.',
+          country: 'Asunción',
+          fec: '9/II/2007 10/IV/2007',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '10/IV/2007'
+        },
+        {
+          no: '61',
+          doc: 'Comunicado Conjunto de Presidentes.',
+          country: 'Taipei',
+          fec: '24/VII/2007',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '62',
+          doc: 'Acuerdo sobre Asistencia Mutua con relación al Tráfico de Drogas y Hechos Punibles Conexos.',
+          country: 'Taipei',
+          fec: '16/X/2007',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '16/X/2007'
+        },
+        {
+          no: '63',
+          doc: 'Acuerdo por Notas Reversales relativo a la Modificación del Artículo 10, Inciso 2 de texto en idioma Español del “Convenio para Evitar la Doble Imposición y Prevenir la Evasión Fiscal con respecto al Impuesto a la Renta”, del 28 de abril de 1994.',
+          country: 'Asunción',
+          fec: '3 y 6 III/2008',
+          lugar: '3972',
+          fecha: '6/V/2010',
+          entrada: '16/X/2007'
+        },
+        {
+          no: '64',
+          doc: 'Acta de Recepción de Desembolso de la Donación de Dólares de los Estados Unidos de América Setenta y Un Millones, de la República de China (Taiwán) a la República del Paraguay.',
+          country: 'Asunción',
+          fec: '9/VII/2009',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '65',
+          doc: 'Convenio para Cooperación  en los Ámbitos de la Cultura, la Educación, las Ciencias y el Deporte.',
+          country: 'Asunción',
+          fec: '8/IX/2009',
+          lugar: '4022',
+          fecha: '24/VI/2010',
+          entrada: '30/VIII/2010'
+        },
+        {
+          no: '66',
+          doc: 'Acuerdo por Notas Reversales sobre la Modificación del Acuerdo por Notas Reversales del 15 de febrero de 1973 relativo a la conformación de la Misión Técnica Agrícola China en Paraguay.',
+          country: 'Asunción',
+          fec: '8/IV/2010',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '8/IV/2010'
+        },
+        {
+          no: '67',
+          doc: 'Acta de Recepción de Desembolso de la Donación de Dólares de los Estados Unidos de América Setecientos Treinta y Siete Mil otorgada por la República de China (Taiwán) a la República del Paraguay para el Financiamiento del Proyecto Prioritario del Ministerio de Relaciones Exteriores.',
+          country: 'Asunción',
+          fec: '20/VII/2010',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '68',
+          doc: 'Acta de Recepción de Desembolso de la Donación de Dólares de los Estados Unidos de América Quinientos Mil otorgada por la República de China (Taiwán) a la República del Paraguay para el Proyecto de Modernización y Fortalecimiento de la Gestión Institucional del Ministerio de Relaciones Exteriores.',
+          country: 'Asunción',
+          fec: '18/VI/2013',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '69',
+          doc: 'Acuerdo de Cooperación Económica',
+          country: 'Taipei',
+          fec: '12/07/2017',
+          lugar: '5.932',
+          fecha: '23/10/2017',
+          entrada: '28/02/2018'
         }
       ]
+      
+      const tbody = document.querySelector('table#bilaterales tbody')
+      let trStr = ''
+      
+      for(let i = 0; i < data.length; i++){
+        trStr += `
+          <tr>
+            <td>${data[i].no}</td>
+            <td style="max-width: 300px; text-align:left;">${data[i].doc}</td>
+            <td>${data[i].country}</td>
+            <td>${data[i].fec}</td>
+            <td>${data[i].lugar}</td>
+            <td>${data[i].fecha}</td>
+            <td>${data[i].entrada}</td>
+          </tr>
+        `
+      }
+    
+      tbody.innerHTML = trStr
+      
+    script
