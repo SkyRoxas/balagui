@@ -1,0 +1,46 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('/images/direccion_banner.jpg', '480px')
+      #page
+        .container
+          main
+            h1(class="page-title") Requisitos para la Repatriación
+            .content_repatriacion_wrapper
+              ul.list
+                li.list-item.highlight Completar la solicitud de Repatriación.
+                li.list-item No haber adquirido otra nacionalidad.
+                li.list-item Poseer cédula de identidad paraguaya.
+                li.list-item Demostrar que ha residido en el extranjero por más de dos años.
+                li.list-item Dos fotografías a color, tipo pasaporte.
+                li.list-item Lista de bienes a ser repatriados, acompañada del conocimiento de embarque (original + copia).
+              .content
+                h2 Comentario
+                .body Para que los documentos en idioma extranjero, tengan validez legal en el Paraguay, deben estar traducidos al español por un traductor público matriculado en la Corte Suprema de Justicia del Paraguay. Todo documento en idioma extranjero debe ser original.
+                a.download(href="#") Instructivo para Repatriación de Enseres Personales, Herramientas de Trabajo y Vehículos al Paraguay.
+                
+                
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
+
+
+
+
+
+
+
+
