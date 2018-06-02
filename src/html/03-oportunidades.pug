@@ -1,0 +1,30 @@
+include mixin/cover-banner
+
+doctype html
+html
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/oportunidades_banner.jpg', '480px')
+      .content.container.my-5
+        h1 OPORTUNIDADES DE INVERSION EN LA REPUBLICA DEL PARAGUAY
+        .row
+          .col-sm-4
+            img(src="images/oportunidades_img.jpg")
+          .col-sm-8
+            p.my-3(style="font-size:16px;line-height:30px;") Para dar continuidad al proceso de fortalecimiento institucional de la República del Paraguay, se encuentra disponible este modelo de “Presentación País”, a fin de que el mismo pueda ser utilizado con ese fin, ante representantes del sector público y privado en actividades propicias para la divulgación de las ventajas comparativas que ofrece el Paraguay.
+            p.my-3(style="font-size:16px;line-height:30px;") El mencionado documento, contiene abundante información y puede convertirse en un material de suma utilidad para los empresarios taiwaneses que tengan interés en realizar inversiones en el Paraguay, único aliado de la República de China-Taiwán, en el Hemisferio Sur del continente americano.
+            a.download(href="#") [DESCARGAR]
+            a.download(href="#") [Reporte de Comercio Exterior Enero - Octubre 2012/2013]
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
