@@ -1,35 +1,35 @@
-.table_content 
+.table_content
     .table_title
         font-size: 38px
         margin-bottom: 60px
-    #table_wrapper
+    .table_wrapper
         overflow-y: scroll
         table
             border: 2px solid #595757
-            width: 100% 
+            width: 100%
             white-space: nowrap
+            thead
+              &:first-child
+                  background-color: #DADADA
+                  border-bottom: 2px solid #595757
+                  th
+                      color: black
+                      font-size: 17px
+                      line-height: 17px
+                      font-weight: bold
+                      padding: 14px
+                      border-right: 1px dashed #595757
+                      text-align: center
             tbody
                 tr
                     border-bottom: 1px dashed #595757
                     td
-                        padding: 14px    
+                        padding: 14px
                         border-right: 1px dashed #595757
                         &:not(:first-child)
                             text-align: center
-                    &:first-child
-                        background-color: #DADADA
-                        border-bottom: 2px solid #595757
-                        th
-                            color: black
-                            font-size: 17px
-                            line-height: 17px
-                            font-weight: bold
-                            padding: 14px
-                            border-right: 1px dashed #595757
+
                     &:nth-last-child(-n+2)
                         border-bottom: none
                     &:nth-last-child(1)
                         border-top: 3px double #595757
-                
-            
-        
