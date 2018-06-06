@@ -1,0 +1,37 @@
+include mixin/cover-banner
+
+doctype html
+html.page-direccion
+  include components/head
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/salvoconducto_banner.jpg', '480px')
+      .content.container.my-5
+        h1 PASAPORTE PROVISORIO (Salvoconducto)
+        p.my-3 La Sección Consular de la Embajada podrá expedir un Pasaporte Provisorio para facilitar el regreso al Paraguay de los connacionales (naturales o naturalizados) que se encuentren sin documentos de viaje, por pérdida, destrucción, inutilización o sustracción de los mismos, o cuando el plazo de validez del documento con el cual viajaron haya vencido. El Pasaporte Provisorio (Salvoconducto) es válido únicamente para viajar al Paraguay, en un plazo no mayor de (60) sesenta días.
+        .row
+            span.col-12.col-lg-6
+              img(src="./images/salvoconducto_img.jpg")
+            div.col-12.col-lg-6
+              h5 Requisitos para su expedición
+              p El solicitante debe comparecer personalmente ante el funcionario de la Sección Consular de la Embajada. Sólo en casos excepcionales y debidamente justificados se exonerará de esta exigencia.
+              div.title.mt-5 El interesado deberá cumplir con los siguientes requisitos:
+              ol.ml-4.my-3
+                li.my-1 Pasaporte paraguayo vencido o cédula de identidad policial del Paraguay. Se aceptan fotocopias si el original fue extraviado. En caso de extravío del pasaporte, deberá presentar la constancia de la denuncia formulada ante la policía local.
+                li.my-1 Rellenar <span style="color:#D55514;">el formulario de solicitud.<span>
+                li.my-1 Dos (02) fotografías tamaño dentro de 6 mese, con tamaño 4cm*5cm, y con fondo blanco.
+                li.my-1 Presentar el itinerario del retorno.
+                li.my-1 Abonar el arancel correspondiente para la expedición que es de USD 30.00.
+                li.my-1 Los Menores de 18 años no pueden firmar el Salvoconducto. Los padres o Tutores deben comparecer al Consulado y firmar el formulario. Los padres ausentes pueden presentar un Permiso de Menor del Paraguay o una autorización de viaje firmada por los mismos. Los padres deben presentar dos copias de los siguientes documentos: pasaporte o documentos de identidad, certificado de nacimiento del menor y documento que acredite la custodia legal (si corresponde).
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
