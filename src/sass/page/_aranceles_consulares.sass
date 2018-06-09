@@ -8,6 +8,7 @@
                 font-size: 17px
                 width: 100%
                 border: 1px solid #595757
+                // table-layout: fixed
                 tr
                     white-space: nowrap
                     border-bottom: 1px dashed #595757
@@ -21,16 +22,24 @@
                         border-bottom: 1px solid #595757
                     th
                         // font-weight: bold
-                        padding: 0 30px
+                        padding: 0 20px
                         color: #595757
                         &:last-child
                             text-align: right
-                    td 
-                        padding: 1px 30px
+                    td
+                        padding: 1px 20px
                         &:first-child
                             text-align: center
                         &:last-child
                             text-align: right
+                tbody
+                    tr
+                      th:first-child, td:first-child
+                        width: 115px
+                      th:nth-child(2), td:nth-child(2)
+                        width: 480px
+                        white-space: normal
+
     .body
         font-size: 17px
         h2
@@ -43,4 +52,3 @@
             padding-left: 18px
             li
                 display: list-item
-        

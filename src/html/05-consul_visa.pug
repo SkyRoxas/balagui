@@ -22,28 +22,30 @@ html
           .county-doc.py-4
             ul.row.mb-4
               li.col-md-3 
-                .visa-icon.yellow
+                .visa-icon.yellow.px-3
                   div Pueden Ingresar al país con el documento nacional de identidad.
               li.col-md-3 
-                .visa-icon.green
+                .visa-icon.green.px-3
                   div Decreto del Gobierno del Paraguay por el cual se determina unilateralmente la exención de visas.
               li.col-md-3 
-                .visa-icon.blue
+                .visa-icon.blue.px-3
                   div Nacionales del referido país pueden entrar sin visado para una estadía de hasta 30 días.
               li.col-md-3 
-                .visa-icon.orange
+                .visa-icon.orange.px-3
                   div Acuerdo Bilateral.
           
-            .visa-icon.red
-                  div Paraguay: Decreto del Poder Ejecutivo No. 7.423 del 6 de julio de 2017, y Taiwán: a través del Anuncio Oficial No. 16 de fecha 12 de julio de 2017 del Ministerio de Relaciones Exteriores (MOFA), suprimieron la necesidad de visas en los pasaportes comunes de ambos lados.
+            .visa-icon.red.px-3
+                  div 
+                    span(style="color:#0038A8;") Paraguay: 
+                    span Decreto del Poder Ejecutivo No. 7.423 del 6 de julio de 2017, y Taiwán: a través del Anuncio Oficial No. 16 de fecha 12 de julio de 2017 del Ministerio de Relaciones Exteriores (MOFA), suprimieron la necesidad de visas en los pasaportes comunes de ambos lados.
         
         .container
           div
             p Anuncio Oficial No. 16 de fecha 12 de julio de 2017 del Ministerio de Relaciones Exteriores (MOFA), suprimieron la necesidad de visas en los pasaportes comunes de ambos lados.
             p 
-            p Para los titulares de pasaporte diplomático, oficial y común de Taiwán tiene exoneración de visado para entrar al territorio paraguayo hasta 90 días máximo por cada viaje.
+            p(style="color:#AE0D23;") Para los titulares de pasaporte diplomático, oficial y común de Taiwán tiene exoneración de visado para entrar al territorio paraguayo hasta 90 días máximo por cada viaje.
             p
-            p Para los extranjeros que residen en Taiwan con ARC, hagan la directa consulta a nuestra Oficina. 
+            p(style="color:#AE0D23;") Para los extranjeros que residen en Taiwan con ARC, hagan la directa consulta a nuestra Oficina. 
             p 
             p 
             a.download Supresion_de_Visas_-_oct17
@@ -297,6 +299,10 @@ html
           {
             name: 'México',
             color: 'green'
+          },
+          {
+            name: 'Singapur',
+            color: 'green'
           }
         ]
         
@@ -315,7 +321,7 @@ html
         for(let i=0; i < country.length; i++){
           let item = country[i]
           itemsCountryStr += `
-            <li class="col-md-2">
+            <li class="col-md-2 col-4">
               <div class="visa-icon ${item.color}">
                 ${item.name}
               </div>
