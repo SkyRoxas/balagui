@@ -1,13 +1,17 @@
 .pager
   text-align: left
-  .pager_item
-    a
-      border-radius: 5px
+  .pager_list
+    display: flex
+    .pager_item
+      display: block
+      margin: 0
       margin-right: 5px
-      background-color: #4A59E6
-      color: #fff
-      &:hover
-        background-color: #121F91
-    a.active
+      a
+        border-radius: 5px
+        background-color: #4A59E6
+        color: #fff
+        &:hover
+          background-color: #121F91
+      a.active
 
-      background-color: #121F91
+        background-color: #121F91
