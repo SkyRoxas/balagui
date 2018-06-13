@@ -1,8 +1,9 @@
 include mixin/cover-banner
+include mixin/head
 
 doctype html
 html
-  include components/head
+  +head
   body.page-other-link
     #page(style="overflow: hidden;")
       header.section.page-header
