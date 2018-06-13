@@ -1,0 +1,39 @@
+include mixin/cover-banner
+include mixin/head
+
+doctype html
+html
+  +head('PASAPORTE DE EMERGENCIA')
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/requisitos_banner.png', '480px')
+      #page
+        .container
+          main
+            h1(class="page-title") PASAPORTE  DE  EMERGENCIA
+            .content.content_repatriacion_wrapper
+                  p La  Sección  Consular  de  la  Embajada  podrá  expedir  un  Pasaporte  de  Emergencia  a  nacionales  paraguayos  que  se  encuentren  sin  pasaportes  en  razón  de  su  destrucción,  inutilización,  extravío  o  sustracción  y  deban  continuar  viajar  a  un  tercer  estado  o  las  autoridades  mogratorias  no  reconoz-can  el  pasaporte  provisorio.  Su  validez  podrá  ser  de  hasta  1  año  y  podrá  ser  llenado  manual
+                  br
+                  h5 Requisitos  para  su  expedición
+                  p El  solicitante  debe  comparecer  personalmente  ante  el  funcionario  de  la  Sección  Consular  de  la  Embajada.
+                  p El  interesado  deberá  cumplir  con  los  siguientes  requisitos:
+                  ol
+                    li Rellenar  el  formulario  de  solicitud.
+                    li Presentar  la  cédula  de  identidad  paraguaya.  (En  caso  de  no  contar  físicamente  con  el  documento  mencionado  precedentemente,  deberá  presentar  copia  del  mismo,  o  del  pasaporte  vencido  u  otro  documento  idóneo  que  compruebe  la  identidad  del  solicitante  y  que  estos  coincidan  con  los  de  la  cédula  de  identidad,  adoptando  los  recaudos  pertinentes  para  asegurar  la  identidad  del  solicitante.)
+                    li Dos (02) fotografías  tomadas  dentro  de  6  meses,  con  tamaño  4cm  *  5cm,  y  con  fondo  blanco.
+                    li Abonar  el  arancel  correspondiente  para  la  expedición  que  es  de  USD  55.00
+                    li Si  el  pasaporte  del  titular  está  extraviado,  hay  que  presentar  la  denuncia  de  extravío  expedida  por  la  Comisaría  dentro  de  la  jurisdicción  (en  inglés)
+                    li Para  los  menores  de  edad,  los  padres  deben  comparecer  a  la  Sección  Consular  y  firmar  el  formulario.  Los  padres  ausentes  pueden  presentar  un  Permiso  de  Menor  del  Paraguay  o  una  autorización  de  viaje  firmada  por  los  mismos.  Los  padres  o  representantes  legales  deben  presentar  dos  copias  de  los  siguientes  documentos:  pasaporte  o  documentos  de  identidad  paraguayos,  certificado  de  nacimiento  del  menor  y     documento     que  acredite  la  custodia  legal  (si  corresponde).
+                
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
