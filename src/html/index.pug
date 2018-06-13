@@ -1,6 +1,7 @@
+include mixin/head
 doctype html
 html
-  include components/head
+  +head()
   body.front
     #page(style="overflow: hidden;")
       header.section.page-header
@@ -14,7 +15,7 @@ html
       include components/news
       include components/google_map
       include components/footer
-      // include components/preload
+      include components/preload
       include components/backtotop
     // Javascript
     script(src='./js/core.min.js')
