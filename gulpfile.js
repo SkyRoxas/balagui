@@ -20,7 +20,7 @@
       js: './dest/js',
       sass: './dest/css/',
       html: './dest/',
-      image: './dest/'
+      image: './dest/images'
     }
   }
 
