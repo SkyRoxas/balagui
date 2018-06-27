@@ -14,7 +14,7 @@
       js: './src/app/**/*.js',
       sass: './src/sass/**/*.sass',
       html: './src/html/**/*.pug',
-      image: './src/images**//*.*'
+      image: './src/images/**/*.*'
     },
     dest: {
       js: './dest/js',
