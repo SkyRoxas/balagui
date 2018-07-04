@@ -1,0 +1,32 @@
+include mixin/cover-banner
+include mixin/head
+
+doctype html
+html
+  +head('Acuerdo de Cooperación Económica.')
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/adce_banner.png', '480px')
+      #page
+        .container
+          main
+            h1(class="page-title") Acuerdo de Cooperación Económica.
+            .content_repatriacion_wrapper
+            
+                a.download(href="https://www.dropbox.com/s/8kf1it1ad5r6o1r/" download) Agreement on Economic Cooperation Between the Republic of China (Taiwan) and the Republic of Paraguay_Signed version (Spanish)
+                a.download(href="https://www.dropbox.com/s/e57t0lsdpjwjkz6/" download) Agreement on Economic Cooperation Between the Republic of China (Taiwan) and the Republic of Paraguay_Signed version (Chinese)
+                a.download(href="https://www.dropbox.com/s/9r5ltjoybwt3gy8/" download) Agreement on Economic Cooperation Between the Republic of China (Taiwan) and the Republic of Paraguay_Signed version (English)
+                
+                
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
