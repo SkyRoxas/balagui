@@ -3,7 +3,7 @@ include mixin/head
 
 doctype html
 html
-  +head('Indicadores Económicos de la República del Paraguay')
+  +head('巴拉圭共和國經濟指數')
   body
     #page(style="overflow: hidden;")
       header.section.page-header
@@ -13,25 +13,29 @@ html
       #banner
         +cover-banner('./images/indicadores_economicos.png', '480px')
       .content.container.my-5
-        h1 Indicadores Económicos de la República del Paraguay
+        h1 巴拉圭共和國經濟指數
           br
-          | Año 2018[1] 
+          | 2018年 
           .row
             .col-sm-6
               img(src="images/Indicadores.png")
-              span(style="font-size:16px;") [1] Indicadores Económicos 2018 del Banco Central del Paraguay
+              span(style="font-size:16px;") *取自巴拉圭中央銀行資料
             .col-sm-6
-              p(style="font-size:16px;line-height:30px;") Proyección PIB 2018 4,5%
+              p(style="font-size:16px;line-height:30px;") 預估 2018 國內生產總值4,5%
                 br
-                | PIB 2017 (Provisorio) 4,3%
+                | 2017 國內生產總值 4,3%
                 br
-                | Inflación 2017 4,5%
+                | 2017 通貨膨脹4,5%
                 br
-                | RIN 6 de abril de 2018 (Provisorio) 8.809,8 M de U$s
+                | 淨國際儲蓄 2018年4月6日 (暫時)  約88億美元
               br
-              p(style="font-size:16px;line-height:30px;") Moneda Nacional y Relación de cambio con el dólar americano US$1= Gs. 5.480 
+              p(style="font-size:16px;line-height:30px;") 巴拉圭國家貨幣瓜拉尼與美金兌換匯率 US$1=Gs.5.480
                 br
-                | Población Activa[1]  4.568.545 personas Tasa de Desempleo[1] 7,6 % Salario mínimo mensual[1] Gs. 2.041.123. (US$ 368 aprox.)
+                | 勞動人口4,568,545人
+                br
+                | 失業率7,6% 
+                br
+                | 最低月薪Gs. 2,041,123. (約US$ 368)
       include components/footer
       include components/preload
       include components/backtotop
