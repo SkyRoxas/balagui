@@ -14,30 +14,29 @@ html
         +cover-banner('./images/convenios-banner.png', '475px')
       .content.container.my-5
         h1.my-5 
-          p Instrumentos Bilaterales suscritos entre
-          p la República del Paraguay y la República de China (Taiwán) 
+          p 雙方協定 
+          p 巴拉圭共和國和中華民國（台灣） 
 
         div.overScroll
           table#bilaterales
             thead
               tr
                 th(rowspan="0") No
-                th(rowspan="0") NOMBRE
-                th(colspan="2") FIRMA
-                th(colspan="2") RATIFICACION PARAGUAY
-                th(rowspan="0") 
-                  div ENTRADA
-                  div EN VIGOR
+                th(rowspan="0") 名稱
+                th(colspan="2") 簽訂
+                th(colspan="2") 修正
+                th(rowspan="0") 生效日期
+                
               tr
-                th LUGAR
-                th FECHA
-                th Nº DE LEY
-                th FECHA
+                th 地點
+                th 日期
+                th 法條
+                th 日期
             tbody
               tr
                 td 1
-                td(style="max-width: 300px; text-align:left;") Acuerdo por Notas Diplomáticas para el Establecimiento de las Relaciones Diplomáticas.
-                td Caracas
+                td(style="max-width: 300px; text-align:left;") 建立邦交關係公文
+                td 卡拉卡斯
                 td 9/VII/1957
                 td -----
                 td -----
@@ -54,8 +53,8 @@ html
     script.
       const data = [{
           no: '01',
-          doc: 'Acuerdo por Notas Diplomáticas para el Establecimiento de las Relaciones Diplomáticas.',
-          country: 'Caracas',
+          doc: '建立邦交關係公文',
+          country: '卡拉卡斯',
           fec: '9/VII/1957',
           lugar: '-----',
           fecha: '-----',
@@ -63,8 +62,8 @@ html
         },
         {
           no: '02',
-          doc: 'Convenio Cultural.',
-          country: 'Asunción',
+          doc: '文化專約',
+          country: '亞松森',
           fec: '18/VIII/1961',
           lugar: '761',
           fecha: '15/XII/1961',
@@ -72,8 +71,8 @@ html
         },
         {
           no: '03',
-          doc: 'Tratado de Comercio y de Cooperación Económica.',
-          country: 'Taipei',
+          doc: '商業暨經濟合作條約',
+          country: '台北',
           fec: '11/V/1962',
           lugar: '811',
           fecha: '18/VII/1962',
@@ -81,8 +80,8 @@ html
         },
         {
           no: '04',
-          doc: 'Acuerdo por Notas Reversales relativo al Artículo 5 del Tratado de Comercio y de Cooperación Económica.',
-          country: 'Taipei',
+          doc: '針對商業暨經濟合作條約第5條所擬定之協議',
+          country: '台北',
           fec: '11/ V/1962',
           lugar: '------',
           fecha: '------',
@@ -90,8 +89,8 @@ html
         },
         {
           no: '05',
-          doc: 'Protocolo Adicional al Tratado de Comercio y de Cooperación Económica.',
-          country: 'Taipei',
+          doc: '中華民國及巴拉圭共和國雙方商業暨經濟合作條約簽定附加草案',
+          country: '台北',
           fec: '11/ V/1962',
           lugar: '------',
           fecha: '------',
@@ -99,8 +98,8 @@ html
         },
         {
           no: '06',
-          doc: 'Tratado de Amistad',
-          country: 'Asunción',
+          doc: '友好條約',
+          country: '亞松森',
           fec: '7/VI/1968',
           lugar: '12',
           fecha: '4/IX/1968',
@@ -108,8 +107,8 @@ html
         },
         {
           no: '07',
-          doc: 'Acta sobre Cooperación Técnica y Económica.',
-          country: 'Asunción',
+          doc: '技術及經濟合作記錄',
+          country: '亞松森',
           fec: '26/VIII/1971',
           lugar: '------',
           fecha: '------',
@@ -117,8 +116,8 @@ html
         },
         {
           no: '08',
-          doc: 'Acuerdo por Notas Reversales que prorroga la vigencia por 10 años el Tratado de Comercio y de Cooperación Económica, su Protocolo Adicional y las Notas Reversales del 11/V/1962.',
-          country: 'Asunción',
+          doc: '商業和經濟合作條約及其附加草案 和 1962年5月11日之雙邊協議案延長10年之有效期',
+          country: '亞松森',
           fec: '28/XII/1972',
           lugar: '------',
           fecha: '------',
@@ -126,8 +125,8 @@ html
         },
         {
           no: '09',
-          doc: 'Convenio sobre Turismo.',
-          country: 'Asunción',
+          doc: '技術合作協定',
+          country: '亞松森',
           fec: '15/II/1973',
           lugar: '398',
           fecha: '07/IX/1973',
@@ -135,8 +134,8 @@ html
         },
         {
           no: '10',
-          doc: 'Acuerdo por Notas Reversales relativo a la conformación de la Misión Técnica Agrícola China en el Paraguay. (N.R. N° 1/73.)',
-          country: 'Asunción',
+          doc: '中華民國駐巴拉圭農業技術代表團之相互協定 N.R.N°1/73',
+          country: '亞松森',
           fec: '15/II/1973',
           lugar: '------',
           fecha: '------',
@@ -144,8 +143,8 @@ html
         },
         {
           no: '11',
-          doc: 'Convenio sobre Inversiones.',
-          country: 'Taipei',
+          doc: '觀光協定',
+          country: '台北',
           fec: '25/IX/1975',
           lugar: '555',
           fecha: '17/XII/1975',
@@ -153,8 +152,8 @@ html
         },
         {
           no: '12',
-          doc: 'Declaración Conjunta de Cancilleres.',
-          country: 'Taipei',
+          doc: '總統聯合公報',
+          country: '台北',
           fec: '25/IX/1975',
           lugar: '------',
           fecha: '------',
@@ -162,8 +161,8 @@ html
         },
         {
           no: '13',
-          doc: 'Convenio sobre Inversiones.',
-          country: 'Taipei',
+          doc: '投資協定',
+          country: '台北',
           fec: '25/IX/1975',
           lugar: '554',
           fecha: '17/XII/1975',
@@ -171,8 +170,8 @@ html
         },
         {
           no: '14',
-          doc: 'Declaración Conjunta de Cancilleres.',
-          country: 'Taipei',
+          doc: '外交部長聯合公報',
+          country: '台北',
           fec: '12/XII/1990',
           lugar: '------',
           fecha: '------',
@@ -180,8 +179,8 @@ html
         },
         {
           no: '15',
-          doc: 'Comunicado Conjunto de Cancilleres.',
-          country: 'Asunción',
+          doc: '外交部長聯合公報',
+          country: '亞松森',
           fec: '3/III/1982',
           lugar: '------',
           fecha: '------',
@@ -189,8 +188,8 @@ html
         },
         {
           no: '16',
-          doc: 'Tratado de Extradición.',
-          country: 'Taipei',
+          doc: '引渡條約',
+          country: '台北',
           fec: '24/IV/1986',
           lugar: '1.208',
           fecha: '29/X/1986',
@@ -198,8 +197,8 @@ html
         },
         {
           no: '17',
-          doc: 'Acta Final de la II Conferencia sobre Cooperación Económica.',
-          country: 'Asunción',
+          doc: '第二屆經濟合作會議記綠',
+          country: '亞松森',
           fec: '18/VIII/1988',
           lugar: '------',
           fecha: '------',
@@ -207,8 +206,8 @@ html
         },
         {
           no: '18',
-          doc: 'Declaración Conjunta Presidencial.',
-          country: 'Taipei',
+          doc: '總統聯合公報',
+          country: '台北',
           fec: '20/VI/1990',
           lugar: '------',
           fecha: '------',
@@ -216,8 +215,8 @@ html
         },
         {
           no: '19',
-          doc: 'Convenio de Cooperación Educacional en el Campo Científico y Tecnológico.',
-          country: 'Taipei',
+          doc: '科學技術領域教作協定',
+          country: '台北',
           fec: '19/VI/1990',
           lugar: '113',
           fecha: '3/I/1991',
@@ -225,8 +224,8 @@ html
         },
         {
           no: '20',
-          doc: 'Acta de la IV Conferencia sobre Cooperación Económica.',
-          country: 'Taipei',
+          doc: '第四屆經濟合作會議記綠',
+          country: '台北',
           fec: '20/VI/1990',
           lugar: '-------',
           fecha: '-------',
@@ -234,8 +233,8 @@ html
         },
         {
           no: '21',
-          doc: 'Acta  de la V Conferencia sobre Cooperación Económica.',
-          country: 'Asunción',
+          doc: '第五屆經濟合作會議記綠',
+          country: '亞松森',
           fec: '15/II/1992',
           lugar: '-------',
           fecha: '-------',
@@ -243,8 +242,8 @@ html
         },
         {
           no: '22',
-          doc: 'Convenio sobre Mutua Garantía de Inversiones.',
-          country: 'Taipei',
+          doc: '雙邊投資保障協定',
+          country: '台北',
           fec: '6/IV/1992',
           lugar: '29',
           fecha: '11/IX/1992',
@@ -252,8 +251,8 @@ html
         },
         {
           no: '23',
-          doc: 'Convenio para Evitar la Doble Imposición y Prevenir la Evasión Fiscal con Respecto a Impuestos a la Renta.',
-          country: 'Asunción',
+          doc: '避免雙重稅收和預防逃漏稅之協定',
+          country: '亞松森',
           fec: '28/IV/1994',
           lugar: '3972',
           fecha: '6/V/2010',
@@ -261,8 +260,8 @@ html
         },
         {
           no: '24',
-          doc: 'Acuerdo por Notas Reversales relativo a la Donación de 20.000.000 US$ para la Construcción de una Nueva Sede para el Congreso Nacional. (N.R. N° 18/94).',
-          country: 'Asunción',
+          doc: '捐助美金 20,000,000 做為建設新國會大廈 N.R.Nº 18/94 之協定',
+          country: '亞松森',
           fec: '21/XII/1994',
           lugar: '560',
           fecha: '28/IV/1995',
@@ -270,8 +269,8 @@ html
         },
         {
           no: '25',
-          doc: 'Protocolo de Actualización del Tratado de Comercio y de Cooperación Económica.',
-          country: 'Taipei',
+          doc: '商業及經濟合作實踐議定書',
+          country: '台北',
           fec: '26/VIII/1995',
           lugar: '916',
           fecha: '31/VII/1996',
@@ -279,8 +278,8 @@ html
         },
         {
           no: '26',
-          doc: 'Memorándum de Entendimiento sobre el fortalecimiento del Plan de Cooperación Técnico – Agrícola.',
-          country: 'Taipei',
+          doc: '鞏固農業技術合作協議瞭解備忘錄',
+          country: '台北',
           fec: '26/VIII/1995',
           lugar: '-------',
           fecha: '-------',
@@ -288,8 +287,8 @@ html
         },
         {
           no: '27',
-          doc: 'Carta de Intención sobre Cooperación en el Estudio de la Planificación de una Nueva Ciudad de Asunción.',
-          country: 'Taipei',
+          doc: '亞松森新城市合作研究計劃議定書',
+          country: '台北',
           fec: '26/VIII/1995',
           lugar: '-------',
           fecha: '-------',
@@ -297,8 +296,8 @@ html
         },
         {
           no: '28',
-          doc: 'Memorándum de Entendimiento para la Promoción de un Parque Industrial en la República del Paraguay.',
-          country: 'Taipei',
+          doc: '巴拉圭共和國工業園區推動瞭解備忘錄',
+          country: '台北',
           fec: '26/VIII/1995',
           lugar: '-------',
           fecha: '-------',
@@ -306,8 +305,8 @@ html
         },
         {
           no: '29',
-          doc: 'Comunicado Conjunto de Presidentes.',
-          country: 'Taipei',
+          doc: '總統聯合公報',
+          country: '台北',
           fec: '26/VIII/1995',
           lugar: '-------',
           fecha: '-------',
@@ -315,8 +314,8 @@ html
         },
         {
           no: '30',
-          doc: 'Acta de la VIII Conferencia sobre Cooperación Económica.',
-          country: 'Taipei',
+          doc: '第八屆經濟合作會議紀錄',
+          country: '台北',
           fec: '29/VIII/1995',
           lugar: '-------',
           fecha: '-------',
@@ -324,8 +323,8 @@ html
         },
         {
           no: '31',
-          doc: 'Acuerdo por Notas Reversales relativo al Plan de Modernización Cibernética de la Cancillería Nacional. (N.R. N° 5/96.)',
-          country: 'Asunción',
+          doc: '外交部現代化控管計劃雙邊換文協議',
+          country: '亞松森',
           fec: '14/VIII/1996',
           lugar: '-------',
           fecha: '-------',
@@ -333,8 +332,8 @@ html
         },
         {
           no: '32',
-          doc: 'Acuerdo por Notas Reversales  para la Construcción de un Puente entre la ciudad de Asunción y la Región Occidental. (N.R. N° 9/97.)',
-          country: 'Asunción',
+          doc: '亞松森市及西部地區橋樑建構換文協議',
+          country: '亞松森',
           fec: '17/IX/1997',
           lugar: '-------',
           fecha: '-------',
@@ -342,8 +341,8 @@ html
         },
         {
           no: '33',
-          doc: 'Memorándum de Entendimiento sobre Cooperación Financiera al Sector Agrícola.',
-          country: 'Asunción',
+          doc: '農業金融合作瞭解備忘錄',
+          country: '亞松森',
           fec: '17/IX/1997',
           lugar: '-------',
           fecha: '-------',
@@ -351,8 +350,8 @@ html
         },
         {
           no: '34',
-          doc: 'Declaración Conjunta de Presidentes.',
-          country: 'Asunción',
+          doc: '總統聯合公報',
+          country: '亞松森',
           fec: '17/IX/1997',
           lugar: '-------',
           fecha: '-------',
@@ -360,8 +359,8 @@ html
         },
         {
           no: '35',
-          doc: 'Acuerdo de Transporte Aéreo.',
-          country: 'Asunción',
+          doc: '航空運輸協定.',
+          country: '亞松森',
           fec: '17/IX/1997',
           lugar: '1.300',
           fecha: '15/VII/1998',
@@ -369,8 +368,8 @@ html
         },
         {
           no: '36',
-          doc: 'Acuerdo por Notas Reversales sobre el Fomento al Comercio y la Capacitación de Recursos Humanos. (N.R. N° 8/97.)',
-          country: 'Asunción',
+          doc: '促進貿易和人力資源培訓換文協議',
+          country: '亞松森',
           fec: '17/IX/1997',
           lugar: '-------',
           fecha: '-------',
@@ -378,8 +377,8 @@ html
         },
         {
           no: '37',
-          doc: 'Protocolo sobre Facilitación Comercial Complementario al Tratado de Comercio y de Cooperación Económica.',
-          country: 'Asunción',
+          doc: '商業便利化議定書，補充“貿易和經濟合作條約',
+          country: '亞松森',
           fec: '17/IX/1997',
           lugar: '1.370',
           fecha: '26/XI/1998',
@@ -387,8 +386,8 @@ html
         },
         {
           no: '38',
-          doc: 'Acuerdo por Notas Reversales sobre Cooperación Económica No Reembolsable para la Implementación de la Red Metropolitana en la Cancillería. N.R. N° 10/97.',
-          country: 'Asunción',
+          doc: '外交部都市通訊網路設備建購之不償還經濟合作協議',
+          country: '亞松森',
           fec: '10/X/1997',
           lugar: '-------',
           fecha: '-------',
@@ -396,8 +395,8 @@ html
         },
         {
           no: '39',
-          doc: 'Acuerdo por Notas Reversales sobre modificación del Artículo XIX Numeral 1, del Acuerdo de Transporte Aéreo. (N.R. N° 3/98.)',
-          country: 'Asunción',
+          doc: '航空運輸協定第19條文-1修改之換文協議',
+          country: '亞松森',
           fec: '3/III/1998',
           lugar: '-------',
           fecha: '-------',
@@ -405,8 +404,8 @@ html
         },
         {
           no: '40',
-          doc: 'Memorándum de Entendimiento sobre Programas de Cooperación Económica.',
-          country: 'Asunción',
+          doc: '經濟合作計畫瞭解備忘錄',
+          country: '亞松森',
           fec: '17/VIII/1998',
           lugar: '-------',
           fecha: '-------',
@@ -414,8 +413,8 @@ html
         },
         {
           no: '41',
-          doc: 'Acuerdo por Notas Reversales sobre Cooperación Económica No Reembolsable a ser destinada al Proyecto de Exportación de Rubros Hortícolas, Frutas, Flores y Ganado Menor.',
-          country: 'Asunción',
+          doc: '園藝, 水果, 花卉及小型牲畜之不償還外銷經濟合作換文協議',
+          country: '亞松森',
           fec: '5/X/1998',
           lugar: '-------',
           fecha: '-------',
@@ -423,8 +422,8 @@ html
         },
         {
           no: '42',
-          doc: 'Memorándum de Entendimiento sobre el Plan de Acción.',
-          country: 'Taipei',
+          doc: '行動計畫瞭解備忘錄',
+          country: '台北',
           fec: '16/IX/1999',
           lugar: '-------',
           fecha: '-------',
@@ -432,8 +431,8 @@ html
         },
         {
           no: '43',
-          doc: 'Comunicado Conjunto Presidencial.',
-          country: 'Taipei',
+          doc: '總統聯合公報',
+          country: '台北',
           fec: '20/IX/1999',
           lugar: '-------',
           fecha: '-------',
@@ -441,8 +440,8 @@ html
         },
         {
           no: '44',
-          doc: 'Acta de la XII Conferencia sobre Cooperación Económica.',
-          country: 'Taipeia',
+          doc: '第十二屆經濟合作會議紀錄',
+          country: '台北a',
           fec: '22/XI/2000',
           lugar: '-------',
           fecha: '-------',
@@ -450,8 +449,8 @@ html
         },
         {
           no: '45',
-          doc: 'Acuerdo sobre Protección Mutua de los Derechos de la Propiedad Intelectual.',
-          country: 'Taipei',
+          doc: '雙邊保護智慧財產權協定',
+          country: '台北',
           fec: '22/XI/2000',
           lugar: '1871',
           fecha: '8/IV/2002',
@@ -459,8 +458,8 @@ html
         },
         {
           no: '46',
-          doc: 'Memorándum de Entendimiento sobre Plan Estratégico de Inversión y Comercio.',
-          country: 'Asunción',
+          doc: '投資暨貿易策略計劃瞭解備忘錄',
+          country: '亞松森',
           fec: '01/VI/2001',
           lugar: '2330',
           fecha: '04/XII/2003',
@@ -468,8 +467,8 @@ html
         },
         {
           no: '47',
-          doc: 'Declaración Conjunta Presidencial.',
-          country: 'Asunción',
+          doc: '總統聯合公報',
+          country: '亞松森',
           fec: '01/VI/2001',
           lugar: '-------',
           fecha: '-------',
@@ -477,8 +476,8 @@ html
         },
         {
           no: '48',
-          doc: 'Memorándum de Entendimiento sobre el Plan de Acción.',
-          country: 'Taipei',
+          doc: '行動計畫瞭解備忘錄',
+          country: '台北',
           fec: '24/VIII/2001',
           lugar: '-------',
           fecha: '-------',
@@ -486,8 +485,8 @@ html
         },
         {
           no: '49',
-          doc: 'Acuerdo para la Supresión de Visas en Pasaportes Diplomáticos y Oficiales',
-          country: 'Taipei',
+          doc: '外交及公務護照免簽證協定',
+          country: '台北',
           fec: '21/VIII/2002',
           lugar: '2143',
           fecha: '25/VII/2003',
@@ -495,8 +494,8 @@ html
         },
         {
           no: '50',
-          doc: 'Memorándum de Entendimiento sobre Creación de un Mecanismo de Consulta y Coordinación entre los Ministerios de Relaciones Exteriores.',
-          country: 'Taipei',
+          doc: '兩國外交部有關設立諮商及協調機制瞭解備忘錄',
+          country: '台北',
           fec: '21/VIII/2002',
           lugar: '-------',
           fecha: '-------',
@@ -504,8 +503,8 @@ html
         },
         {
           no: '51',
-          doc: 'Declaración Conjunta entre los Vicepresidentes.',
-          country: 'Asunción',
+          doc: '副總統聯合公報',
+          country: '亞松森',
           fec: '15/VIII/2003',
           lugar: '-------',
           fecha: '-------',
@@ -513,8 +512,8 @@ html
         },
         {
           no: '52',
-          doc: 'Memorándum entre la República del Paraguay y la República de China.',
-          country: 'Taipei',
+          doc: '兩國別忘綠',
+          country: '台北',
           fec: '10/II/2004',
           lugar: '-------',
           fecha: '-------',
@@ -522,8 +521,8 @@ html
         },
         {
           no: '53',
-          doc: 'Declaración Conjunta entre Vicepresidentes.',
-          country: 'Taipei',
+          doc: '副總統聯合公報',
+          country: '台北',
           fec: '12/II/2004',
           lugar: '-------',
           fecha: '-------',
@@ -531,8 +530,8 @@ html
         },
         {
           no: '54',
-          doc: 'Declaración Conjunta Presidencial.',
-          country: 'Taipei',
+          doc: '總統聯合公報',
+          country: '台北',
           fec: '24/V/2004',
           lugar: '-------',
           fecha: '-------',
@@ -540,8 +539,8 @@ html
         },
         {
           no: '55',
-          doc: 'Memorándum sobre Agenda bilateral.',
-          country: 'Taipei',
+          doc: '雙邊議程備忘錄',
+          country: '台北',
           fec: '24/V/2004',
           lugar: '-------',
           fecha: '-------',
@@ -549,8 +548,8 @@ html
         },
         {
           no: '56',
-          doc: 'Acta de la Decimocuarta Conferencia sobre Cooperación.',
-          country: 'Asunción',
+          doc: '第十四屆經濟合作會議紀錄',
+          country: '亞松森',
           fec: '10/VIII/2004',
           lugar: '-------',
           fecha: '-------',
@@ -558,8 +557,8 @@ html
         },
         {
           no: '57',
-          doc: 'Acuerdo sobre Envío de Voluntarios.',
-          country: 'Taipei',
+          doc: '志工派遣協定',
+          country: '台北',
           fec: '20/XII/2005',
           lugar: '-------',
           fecha: '-------',
@@ -567,8 +566,8 @@ html
         },
         {
           no: '58',
-          doc: 'Comunicado Conjunto de Cancilleres.',
-          country: 'Taipei',
+          doc: '外交部長聯合公報',
+          country: '台北',
           fec: '20/XII/2005',
           lugar: '-------',
           fecha: '-------',
@@ -576,8 +575,8 @@ html
         },
         {
           no: '59',
-          doc: 'Declaración Conjunta Presidencial.',
-          country: 'Asunción',
+          doc: '總統聯合公報',
+          country: '亞松森',
           fec: '06/05/2006',
           lugar: '-------',
           fecha: '-------',
@@ -585,8 +584,8 @@ html
         },
         {
           no: '60',
-          doc: 'Acuerdo por Notas Verbales sobre la Modificación del Acuerdo por Notas Reversales del 15 de febrero de 1973 relativo a la conformación de la Misión Técnica Agrícola China en el Paraguay.',
-          country: 'Asunción',
+          doc: '關於修正1973/2/15赴巴農業技術團換文協定之協定',
+          country: '亞松森',
           fec: '9/II/2007 10/IV/2007',
           lugar: '-------',
           fecha: '-------',
@@ -594,8 +593,8 @@ html
         },
         {
           no: '61',
-          doc: 'Comunicado Conjunto de Presidentes.',
-          country: 'Taipei',
+          doc: '外交部長聯合公報',
+          country: '台北',
           fec: '24/VII/2007',
           lugar: '-------',
           fecha: '-------',
@@ -603,8 +602,8 @@ html
         },
         {
           no: '62',
-          doc: 'Acuerdo sobre Asistencia Mutua con relación al Tráfico de Drogas y Hechos Punibles Conexos.',
-          country: 'Taipei',
+          doc: '兩國有關合作打擊毒品買賣及相關犯罪行為',
+          country: '台北',
           fec: '16/X/2007',
           lugar: '-------',
           fecha: '-------',
@@ -612,8 +611,8 @@ html
         },
         {
           no: '63',
-          doc: 'Acuerdo por Notas Reversales relativo a la Modificación del Artículo 10, Inciso 2 de texto en idioma Español del “Convenio para Evitar la Doble Imposición y Prevenir la Evasión Fiscal con respecto al Impuesto a la Renta”, del 28 de abril de 1994.',
-          country: 'Asunción',
+          doc: '1994/4/28 避免雙重稅收和預防逃漏稅之協定西文版',
+          country: '亞松森',
           fec: '3 y 6 III/2008',
           lugar: '3972',
           fecha: '6/V/2010',
@@ -621,8 +620,8 @@ html
         },
         {
           no: '64',
-          doc: 'Acta de Recepción de Desembolso de la Donación de Dólares de los Estados Unidos de América Setenta y Un Millones, de la República de China (Taiwán) a la República del Paraguay.',
-          country: 'Asunción',
+          doc: '巴拉圭接受中華民國無償7100萬美元捐款記錄',
+          country: '亞松森',
           fec: '9/VII/2009',
           lugar: '-------',
           fecha: '-------',
@@ -630,8 +629,8 @@ html
         },
         {
           no: '65',
-          doc: 'Convenio para Cooperación  en los Ámbitos de la Cultura, la Educación, las Ciencias y el Deporte.',
-          country: 'Asunción',
+          doc: '巴拉圭共和國政府與中華民國政府間文化教育科學運動合作協定',
+          country: '亞松森',
           fec: '8/IX/2009',
           lugar: '4022',
           fecha: '24/VI/2010',
@@ -639,8 +638,8 @@ html
         },
         {
           no: '66',
-          doc: 'Acuerdo por Notas Reversales sobre la Modificación del Acuerdo por Notas Reversales del 15 de febrero de 1973 relativo a la conformación de la Misión Técnica Agrícola China en Paraguay.',
-          country: 'Asunción',
+          doc: '關於修正1973/2/15赴巴農業技術團換文協定之換文協定',
+          country: '亞松森',
           fec: '8/IV/2010',
           lugar: '-------',
           fecha: '-------',
@@ -648,8 +647,8 @@ html
         },
         {
           no: '67',
-          doc: 'Acta de Recepción de Desembolso de la Donación de Dólares de los Estados Unidos de América Setecientos Treinta y Siete Mil otorgada por la República de China (Taiwán) a la República del Paraguay para el Financiamiento del Proyecto Prioritario del Ministerio de Relaciones Exteriores.',
-          country: 'Asunción',
+          doc: '巴拉圭接受中華民國贈巴拉圭外交部優先計畫融資無償737.000美元捐',
+          country: '亞松森',
           fec: '20/VII/2010',
           lugar: '-------',
           fecha: '-------',
@@ -657,8 +656,8 @@ html
         },
         {
           no: '68',
-          doc: 'Acta de Recepción de Desembolso de la Donación de Dólares de los Estados Unidos de América Quinientos Mil otorgada por la República de China (Taiwán) a la República del Paraguay para el Proyecto de Modernización y Fortalecimiento de la Gestión Institucional del Ministerio de Relaciones Exteriores.',
-          country: 'Asunción',
+          doc: '巴拉圭接受中華民國贈巴拉圭外交部現代化及機構強化計畫無償50萬',
+          country: '亞松森',
           fec: '18/VI/2013',
           lugar: '-------',
           fecha: '-------',
@@ -666,13 +665,49 @@ html
         },
         {
           no: '69',
-          doc: 'Acuerdo de Cooperación Económica',
-          country: 'Taipei',
+          doc: '兩國2013-2018無長財務合作瞭解備忘錄 (推動平民住宅計畫)',
+          country: '台北',
           fec: '12/07/2017',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '70',
+          doc: '總統聯合公報',
+          country: '亞松森',
+          fec: '28/VI/2016',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '-------'
+        },
+        {
+          no: '71',
+          doc: '航空運輸協定修正協定',
+          country: '亞松森',
+          fec: '28/VI/2016',
+          lugar: '5.827',
+          fecha: '17/06/2017',
+          entrada: '17/06/2017'
+        },
+        {
+          no: '72',
+          doc: '兩國普通護照免簽協定',
+          country: '台北',
+          fec: '12/VII/2017',
+          lugar: '-------',
+          fecha: '-------',
+          entrada: '6/VII/2017'
+        },
+        {
+          no: '73',
+          doc: '經濟合作協定',
+          country: '亞松森',
+          fec: '12/VII/2017',
           lugar: '5.932',
           fecha: '23/10/2017',
-          entrada: '28/02/2018'
-        }
+          entrada: '28/II/2018'
+        },
       ]
       
       const tbody = document.querySelector('table#bilaterales tbody')
