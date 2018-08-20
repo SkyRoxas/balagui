@@ -3,7 +3,7 @@ include mixin/head
 
 doctype html
 html
-  +head('AREA CONSULAR')
+  +head('領事事務')
   body.page-counsul-visa
     #page(style="overflow: hidden;")
       header.section.page-header
@@ -13,33 +13,35 @@ html
       #banner
         +cover-banner('./images/area_consular_banner.png', '480px')
         .content.container.my-5
-          h1 AREA CONSULAR
-          p La Sección Consular de la Embajada de la República del Paraguay en la República de China (Taiwán) no tiene concurrencia para atender los asuntos consulares originados en otros países de la región. Solamente los originados dentro de la República de China (Taiwán). 
-          p Enlaces de las Embajadas del Paraguay en Asia y Oceanía:           
+          h1 領事事務
+          p 巴拉圭共和國駐中華民國大使館沒有權限處理其他國家領事的事物，其權責只限於中華民國〈台灣〉地區之領事事務。
+          p 巴拉圭共和國駐亞州及大洋洲大使館網址：           
           a(href="http://www.mre.gov.py/australia/inicio.htm")
-            span(style="color: #D55514;") Embajada en Australia 
+            span(style="color: #D55514;") 巴拉圭駐澳洲大使館 
           br
           a(href="http://www.embapar.jp/sc/")
-            span(style="color: #D55514;") Embajada en Japón 
+            span(style="color: #D55514;") 巴拉圭駐日本大使館 
           br
           a(href="http://www.embaparcorea.org/esp/")
-            span(style="color: #D55514;") Embajada en Corea del Sur 
+            span(style="color: #D55514;") 巴拉圭駐南韓大使館
           br
           a(href="http://www.paraguayembassy.in/")
-            span(style="color: #D55514;") Embajada en India 
+            span(style="color: #D55514;") 巴拉圭駐印度大使館
           p
+          p
+            span
+              | 對外開放時間(12:00 – 13:00為中午休息時間)：<br>
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;送件時間為周一至周五，09:00 – 11:30 <br>
+              | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取件時間為周一至周五，13:30 – 16:00 <br>
+              | ※所有認證文件均需三個工作天〈不包含送件當天〉<br>
+              | ※簽證<span style="color: #D55514;">至少</span>需要五個工作天以上〈不包含送件當天〉<br>
+              | <span style="color: #D55514;">※每個月最後一個工作日不收件</span> <br>
           p
             span(style="color:#0038A8;")
-              | Atención al público: 
-              | Entrega de Documentos: de lunes a viernes, 09:00 - 11:30
-              | Retiro de Documentos: de lunes a viernes, 13:30 - 16:00 
-              | (Horario de descanso: 12:00 - 13:00) 
-              br
-              | Observación: Los aranceles consulares son depositados en U$D (se puede pagar en NTD según el cambio en el momento que hace el depósito) por los interesados en la cuenta habilitada en el banco CTBC BANK, North Tianmu Branch, a nombre de la Embajada del Paraguay en la República de China (Taiwán), y deben fijarse en el horario de atención en el banco (09:00-15:30)
-              br
-              | Otros trámites (con previa cita): de lunes a viernes
-              br
-              | *Excepto los fines de semana y los días feriados.
+              | 注意事項： </br>
+              | 領事費用均已美金〈U$D〉計價，並於以新台幣〈NTD〉存入大使館戶名之中國信託北天母分行〈CTBC BANK – TIANMU BRANCH〉，並依照銀行營業時間辦理〈09:00 – 15:30〉。</br>
+              | 其他領事事務〈需預約〉：周一至之周五</br>
+              | *不包含例假日
       include components/footer
       include components/preload
       include components/backtotop

@@ -3,7 +3,7 @@ include mixin/head
 
 doctype html
 html
-  +head('VISADO DE DOCUMENTOS COMERCIALES DE EXPORTACIÓN')
+  +head('商業出口文件認證')
   body
     #page(style="overflow: hidden;")
       header.section.page-header
@@ -13,23 +13,13 @@ html
       #banner
         +cover-banner('./images/legalizaciones_banner.jpg', '480px')
       .content.container.my-5
-        h1 VISADO DE DOCUMENTOS COMERCIALES DE EXPORTACIÓN
-        p La Sección Consular de la Embajada del Paraguay requiere de los exportadores taiwaneses la presentación de los documentos visados por la Cámara gremial de los productos de que se trate, por las Cámaras Binacionales de Comercio o por las instituciones habilitadas específicamente para expedir el certificado de origen.
-        p Los documentos requeridos y el costo del visado de cada uno de ellos son los siguientes:
-        ul 
-          li Factura comercial. (1 original 1 copia) – U$S 15
-          li Conocimiento de Embarque o Guía Aérea. (1 original y 1 copia) - U$S 15
-          li Certificado de Origen. (1 original y 1 copia) - U$S 25
-          li Lista de Empaque o Lista de Precios (1 original y 1 copia) – U$S 12
+        h1 商業出口文件認證
+        p 巴拉圭共和國大使館領事處要求所有商業出口文件均須經過可授權簽發產地證明機構及該產品相關商會認證之商業出口文件
         .my-5
           img.img-fluid(src="./images/legalizaciones_img.jpg", alt="")
-        p.h2 AUTENTICACIÓN O LEGALIZACIÓN DE DOCUMENTOS EN GENERAL
-        p 
-          | La Sección Consular de la Embajada autentica y legaliza documentos originales o copias certificadas, originados única y exclusivamente en la República de China (Taiwán). Los documentos deben estar previamente certificados por el Buró de Asuntos Consulares del Ministerio de Asuntos Exteriores de la República de China (Taiwán). Cada documento cuya autenticación o legalización se solicita, debe presentarse en un original autenticado por la autoridad mencionada y 
-          span(style="color: #003A95;") una fotocopia simple 
-          | antes de ser  visado por esta Sección Consular.
-        p 
-        p(style="color:#F43737;") Observación: Esta Sección Consular no certifica traducciones, siempre deben ser certificada o legalizada las versiones originales (chino o ingles), las traducciones deben hacerse en el Paraguay. La traducción no puede reemplazar al original en el proceso de certificación consular. 
+        p.h2 一般文件認證
+        p 巴拉圭共和國大使館領事處只認證由中華民國〈台灣〉所核發的經認證過的原文文件或其副本。 所有文件須經由中華民國外交部領事事務局認證，每份申請認證文件需提交影透過外交部認證後之正本以及附上一份相同之影印本〈本使館留底〉，才能經由本處認證。原文本倘若是中文，請先認證好該原文本，在附上相關翻譯才得以送至本處認證。
+        p(style="color:#F43737;") 備註：本處不認證翻譯本文件，文件均需以原文本做認證〈中文或英文〉，其正式翻譯需在巴拉圭當地辦理，所有翻譯本均不可取代原文本。
 
       include components/footer
       include components/preload
