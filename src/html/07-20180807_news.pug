@@ -1,0 +1,32 @@
+include mixin/cover-banner
+include mixin/head
+
+doctype html
+html
+  +head('NOTICIAS')
+  body
+    #page(style="overflow: hidden;")
+      header.section.page-header
+        .container
+          include components/header_top
+          include components/menu
+      #banner
+        +cover-banner('./images/news_banner.png', '480px')
+        
+      .content.container.my-5
+      
+        h5
+          | Acuerdo Entre el Gobierno de la República de China (Taiwán) y el Gobierno de la República del Paraguay sobre la Supresión de la Exigencia de la Doble Legalización de los Documentos Públicos Extranjeros.
+        br
+        
+        p El Acuerdo Entre el Gobierno de la República de China (Taiwán) y el Gobierno de la República del Paraguay sobre la Supresión de la Exigencia de la Doble Legalización de los Documentos Públicos Extranjeros” firmado el 12 de julio de 2017 por los Cancilleres de ambos países, entra en vigor el 08 de agosto del año en curso.
+        
+        p Los documentos expedidos dentro del territorio de uno de los dos países, a partir del 08 de agosto de 2018, los documentos únicamente deben ser legalizados por el Buró de Asuntos Consulares del Ministerio de Relaciones Exteriores de la República de China (Taiwán) (Documentos originariamente expedidos en Taiwán) sin la legalización por la Embajada de la República del Paraguay en Taiwán; y por la Dirección de Legalización del Ministerio de Relaciones Exteriores de la República del Paraguay (Documentos originariamente expedidos en el Paraguay) sin la legalización a través de la Embajada o Consulado de Taiwán en el Paraguay.
+        
+      include components/footer
+      include components/preload
+      include components/backtotop
+    // Javascript
+    script(src='./js/core.min.js')
+    script(src='./js/script.js')
+    script new WOW().init();
