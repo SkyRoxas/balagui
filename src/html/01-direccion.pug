@@ -3,7 +3,7 @@ include mixin/head
 
 doctype html
 html.page-direccion
-  +head('聯絡地址')
+  +head('Address')
   body
     #page(style="overflow: hidden;")
       header.section.page-header
@@ -13,32 +13,37 @@ html.page-direccion
       #banner
         +cover-banner('./images/direccion_banner.jpg', '480px')
       .content.container.my-5
-        h1 聯絡地址
+        h1 Address
         .d-flex
-          strong.mr-2 地址：
-          p 台北市天母西路62巷9-1號7樓
+          strong.mr-2 Address:
+          p 7th. Floor No. 9-1 Lane 62 Tien Mu West Rd. Taipei, Taiwan
+
         .d-flex
-          strong.mr-2 電話：
+          strong.mr-2 Tel:
           p  (02) 2873-6310 2873-6311 
         .d-flex
-          strong.mr-2 傳真：
+          strong.mr-2 FAX:
           p (02) 2873-6312 
         .d-flex
-          strong.mr-2 電子郵件：
+          strong.mr-2 Email:
           p embapartaiwan@embapartwroc.com.tw 
         .d-flex
-          strong.mr-2 緊急電話:
+          strong.mr-2 EMERGENCY TELEPHONE NUMBER:
           p (+886) 928-391-360 
-        p(style="color:#B80D23") *急難救助電話專供緊急求助之用(如車禍、搶劫、有關生命安危緊急情況等)，非急難重大事件，請勿撥打；
-          br
-          | 一般護照、簽證等事項，請於上班時間以辦公室電話查詢。
+
+        p(style="color:#B80D23") * This number is only for emergencies.
 
         br
-        h5 公共交通
-        p 1.最近捷運站：石牌，淡水線 (紅)
-        p 2.出捷運站可轉搭公車或搭乘計程車 (約十分鐘車程)  
-        p 3.轉公車：出捷運站右轉，於肯德基前的公車站牌搭乘：紅12, 紅19, 645
-        p 4.於振興公園 (榮總下一站) 或齊賢華廈下車
+        h5 PUBLIC TRANSPORT
+        p 1.Nearest metro station: Shipai, Danshui Line (red).
+        p 2.Taxi or bus can be taken from the Shipai station (approx 10 mins.)
+        p 3.To take bus: Leaving the MRT station turn right, in front of KFC there are bus stops. The buses that arrive are:
+
+        p(style="color:#B80D23") Red 12
+        p(style="color:#B80D23") Red 19
+        p 645
+        p Get off at the Zhengxing Hospital Estation stop (one stop after the Veteran Hospital).
+
        
       include components/google_map          
       include components/footer
