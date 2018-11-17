@@ -3,7 +3,7 @@ include mixin/head
 
 doctype html
 html
-  +head('巴拉圭共和國經濟指數')
+  +head('Economic Indicators of the Republic of Paraguay')
   body
     #page(style="overflow: hidden;")
       header.section.page-header
@@ -13,29 +13,30 @@ html
       #banner
         +cover-banner('./images/indicadores_economicos.png', '480px')
       .content.container.my-5
-        h1 巴拉圭共和國經濟指數
-          br
-          | 2018年 
-          .row
-            .col-sm-6
-              img(src="images/Indicadores.png")
-              span(style="font-size:16px;") *取自巴拉圭中央銀行資料
-            .col-sm-6
-              p(style="font-size:16px;line-height:30px;") 預估 2018 國內生產總值4,5%
-                br
-                | 2017 國內生產總值 4,3%
-                br
-                | 2017 通貨膨脹4,5%
-                br
-                | 淨國際儲蓄 2018年4月6日 (暫時)  約88億美元
+        h1 Economic Indicators of the Republic of Paraguay
+        .row
+          .col-sm-6
+            img(src="images/Indicadores.png")
+          .col-sm-6
+            p 
+             | GDP 2018 projection 4.5%
+             br
+             | GDP 2017 (Provisional) 4.3%
+             br
+             | Inflation 2017 4.5%
+             br
+             | RIN April 6, 2018 (Provisional) 8,809.8 M US $ 
+             br
+            br
+            p
+              | National Currency and Exchange rate with the US dollar US $ 1 = Gs. 5.480
               br
-              p(style="font-size:16px;line-height:30px;") 巴拉圭國家貨幣瓜拉尼與美金兌換匯率 US$1=Gs.5.480
-                br
-                | 勞動人口4,568,545人
-                br
-                | 失業率7,6% 
-                br
-                | 最低月薪Gs. 2,041,123. (約US$ 368)
+              | Active Population [1] 4,568,545 people Unemployment Rate [1] 7.6%
+              br
+              | Minimum monthly salary [1] Gs. 2,041,123. (US $ 368 approx.)
+              br
+        br
+        p [1] Economic Indicators 2018 from the Central Bank of Paraguay
       include components/footer
       include components/preload
       include components/backtotop
