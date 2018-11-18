@@ -3,7 +3,7 @@ include mixin/head
 
 doctype html
 html
-  +head('最新消息')
+  +head('NEWS')
   body
     #page(style="overflow: hidden;")
       header.section.page-header
@@ -13,7 +13,7 @@ html
       #banner
         +cover-banner('./images/news_banner.png', '480px')
       .content.container.my-5
-        h1.my-5 最新消息
+        h1.my-5 NEWS
         section.noticias_wrap
           include components/news_list
           include components/pager
