@@ -273,17 +273,19 @@ html
           {
             name: 'Mexico',
             color: 'green'
-          },
-          {
-            name: 'Singapore',
-            color: 'blue'
           }
         ]
         
         const redCountry = [
           {
             name: 'Taiwan',
-            color: 'orange'
+            color: 'orange',
+            titleColor: 'visa-icon red' 
+          },
+          {
+            name: 'Singapore',
+            color: 'blue',
+            titleColor: ''
           }
         ]
         
@@ -307,7 +309,7 @@ html
           let item = redCountry[i]
           itemsRedCountryStr += `
             <li class="col-md-2">
-              <div class="visa-icon red">
+              <div class="${item.titleColor}">
                 <div class="visa-icon ${item.color}">
                   ${item.name}
                 </div>
